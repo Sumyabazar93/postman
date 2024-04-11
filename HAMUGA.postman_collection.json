@@ -1,0 +1,2031 @@
+{
+	"info": {
+		"_postman_id": "e8f785f0-15dc-468c-93c1-5fed182ffc4d",
+		"name": "HAMUGA",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27820006"
+	},
+	"item": [
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "CreateUser",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjI1NjAwMjg2ODkxMjMyNDYxMCIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLmhhbXVnYS5tbjo0NDMiLCJzdWIiOiIyNTYwMjk2NTAzODIyMjU0MTAiLCJhdWQiOlsiMjQ0NTY2OTY4OTY1ODU3MjgzQGRldmVsb3Blcl9wb3J0YWwiLCIyNDQ1NjY4MjE5NDcwNDc5MzkiXSwiZXhwIjoxNzA5MTg4MDM3LCJpYXQiOjE3MDkxMDE2MzgsIm5iZiI6MTcwOTEwMTYzOCwianRpIjoiMjU2MDI5Nzc1MTM3NjAzNTg2In0.RxaEGEx1ywFHDNRyWXC2jJdpKZuUHUKJK59I_zQVwW6hJLs_EqYhMHyj8bu76-yHGyr4f5syS8HjqHRRR71ASU1pri5NyNuM9FtxEu-5r560zDEKMwunQ80TOZ7OKt9arH-39mLVJPwhFTLJaLKacUzUtB-2IEJiPPxL5JivwnIx2eGaohQFdm09fwD6dRItQlx20gExT2pEmQtG4E86RyAfVfnPAra-_kyFX-PrTBo_CgRfbVPyAMQlZtq9kbH-w5aKdQuGx4eQl_Hbn7JvWNOxV6eFsM-UE0WrAibz4i8U6OsvDKafk5jfvKYp0Tclf6cUIhdQb8WMjxKeu1iFoQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "sahdjkasd",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:7001/api/user/create",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "7001",
+							"path": [
+								"api",
+								"user",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "consumer list by user",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:7001/api/user/consumer/list/244728604489940995",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "7001",
+							"path": [
+								"api",
+								"user",
+								"consumer",
+								"list",
+								"244728604489940995"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "user list",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "sahdjkasd",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:7001/api/user/list",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "7001",
+							"path": [
+								"api",
+								"user",
+								"list"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteUser",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjI0MjUyNjgyMTE4MTAzMDQwMyIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwOi8vYXV0aHYyLmhhbXVnYS5tbiIsInN1YiI6IjI0MDgyNDc3OTQxMjYwMjg4MyIsImF1ZCI6WyIyNDA4MjE0MTc2MTA5MDM1NTVAZGV2ZWxvcGVyX3BvcnRhbCIsIjI0MjExMDQ2MjE2OTI1MTg0M0BkZXZlbG9wZXJfcG9ydGFsIiwiMjQwODI3MTIyNDUxNTQ2MTE1QGRldmVsb3Blcl9wb3J0YWwiLCIyMzg2NDUwNDIyMzc5MzE1MjMiXSwiZXhwIjoxNzAxMTE0NjA1LCJpYXQiOjE3MDEwNzE0MDUsImF1dGhfdGltZSI6MTcwMDc0Mjk1NCwiYW1yIjpbInBhc3N3b3JkIiwicHdkIl0sImF6cCI6IjI0MDgyMTQxNzYxMDkwMzU1NUBkZXZlbG9wZXJfcG9ydGFsIiwiY2xpZW50X2lkIjoiMjQwODIxNDE3NjEwOTAzNTU1QGRldmVsb3Blcl9wb3J0YWwiLCJhdF9oYXNoIjoiZEszRHh0SlB4NlE4a2RvazZ6SnBpZyIsImNfaGFzaCI6ImFybm5EMkw4LVhRM2tqWlJDNDN0S2ciLCJuYW1lIjoiZXN1dSBlc3V1IiwiZ2l2ZW5fbmFtZSI6ImVzdXUiLCJmYW1pbHlfbmFtZSI6ImVzdXUiLCJsb2NhbGUiOiJlbi11LXJnLXVzenp6eiIsInVwZGF0ZWRfYXQiOjE3MDA3MTMxMzMsInByZWZlcnJlZF91c2VybmFtZSI6ImVzb25lcmRlbmUxQGdtYWlsLmNvbSIsImVtYWlsIjoiZXNvbmVyZGVuZUBnbWFpbC5jb20iLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZX0.Gn3NV0gapdYKTJvxWMxmU4aI1LCEunhJgV6TWO35Gd0EMUzS7tntDvLPks-3ljqzFOHfnzZelfIylwNVP9LxABSBMIDSeCDC4cUIocFSEz0KrrZvXwIhL2FD4zKkzHXurhj86H0RAyId5NhLVv-xxcMRHTn7HjFD8X0xgAFsfZTncL-OqichhPDevczawFBsozYWIkyZ1eQDMtY82zpIZU29nETBZ4H1AKnmAfNIaoKrxfOB3rYkET9Xk25aDDjGuHLe7RYBykolwZtjeVfU2mn_pFTk2xFwuZCUj5fA4Zuf-3selUnhqyNf8-KfKAdbCCzmBtzIM-41e8ok0bdWeQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:7001/api/user/delete/240824779412602883",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "7001",
+							"path": [
+								"api",
+								"user",
+								"delete",
+								"240824779412602883"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetUser",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjI0MjUyNjgyMTE4MTAzMDQwMyIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwOi8vYXV0aHYyLmhhbXVnYS5tbiIsInN1YiI6IjI0MDgyNDc3OTQxMjYwMjg4MyIsImF1ZCI6WyIyNDA4MjE0MTc2MTA5MDM1NTVAZGV2ZWxvcGVyX3BvcnRhbCIsIjI0MjExMDQ2MjE2OTI1MTg0M0BkZXZlbG9wZXJfcG9ydGFsIiwiMjQwODI3MTIyNDUxNTQ2MTE1QGRldmVsb3Blcl9wb3J0YWwiLCIyMzg2NDUwNDIyMzc5MzE1MjMiXSwiZXhwIjoxNzAxMTE0NjA1LCJpYXQiOjE3MDEwNzE0MDUsImF1dGhfdGltZSI6MTcwMDc0Mjk1NCwiYW1yIjpbInBhc3N3b3JkIiwicHdkIl0sImF6cCI6IjI0MDgyMTQxNzYxMDkwMzU1NUBkZXZlbG9wZXJfcG9ydGFsIiwiY2xpZW50X2lkIjoiMjQwODIxNDE3NjEwOTAzNTU1QGRldmVsb3Blcl9wb3J0YWwiLCJhdF9oYXNoIjoiZEszRHh0SlB4NlE4a2RvazZ6SnBpZyIsImNfaGFzaCI6ImFybm5EMkw4LVhRM2tqWlJDNDN0S2ciLCJuYW1lIjoiZXN1dSBlc3V1IiwiZ2l2ZW5fbmFtZSI6ImVzdXUiLCJmYW1pbHlfbmFtZSI6ImVzdXUiLCJsb2NhbGUiOiJlbi11LXJnLXVzenp6eiIsInVwZGF0ZWRfYXQiOjE3MDA3MTMxMzMsInByZWZlcnJlZF91c2VybmFtZSI6ImVzb25lcmRlbmUxQGdtYWlsLmNvbSIsImVtYWlsIjoiZXNvbmVyZGVuZUBnbWFpbC5jb20iLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZX0.Gn3NV0gapdYKTJvxWMxmU4aI1LCEunhJgV6TWO35Gd0EMUzS7tntDvLPks-3ljqzFOHfnzZelfIylwNVP9LxABSBMIDSeCDC4cUIocFSEz0KrrZvXwIhL2FD4zKkzHXurhj86H0RAyId5NhLVv-xxcMRHTn7HjFD8X0xgAFsfZTncL-OqichhPDevczawFBsozYWIkyZ1eQDMtY82zpIZU29nETBZ4H1AKnmAfNIaoKrxfOB3rYkET9Xk25aDDjGuHLe7RYBykolwZtjeVfU2mn_pFTk2xFwuZCUj5fA4Zuf-3selUnhqyNf8-KfKAdbCCzmBtzIM-41e8ok0bdWeQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:7001/api/user/get/240824779412602883",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "7001",
+							"path": [
+								"api",
+								"user",
+								"get",
+								"240824779412602883"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get-user-info",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjI0MjQyNzQ1MTE1NjcyNTc2MyIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwOi8vYXV0aHYyLmhhbXVnYS5tbiIsInN1YiI6IjI0MDgyNDc3OTQxMjYwMjg4MyIsImF1ZCI6WyIyNDA4MjE0MTc2MTA5MDM1NTVAZGV2ZWxvcGVyX3BvcnRhbCIsIjI0MjExMDQ2MjE2OTI1MTg0M0BkZXZlbG9wZXJfcG9ydGFsIiwiMjQwODI3MTIyNDUxNTQ2MTE1QGRldmVsb3Blcl9wb3J0YWwiLCIyMzg2NDUwNDIyMzc5MzE1MjMiXSwiZXhwIjoxNzAxMDQ2MDY3LCJpYXQiOjE3MDEwMDI4NjcsIm5iZiI6MTcwMTAwMjg2NywianRpIjoiMjQyNDQyMjkzNTA2NzM2MTMxIn0.L_YnpP5AGMfI93b_C7gK6pPCZ33aVUwGwZEkEeFbyw9uxcRfDzkS0gtJr1U7m6rnYoji2QuGj_lUC8f7xqyhD6q2XlXaNUn0yml_3CN94MlkbwE9LqqlcGXXMr5AabG9N9f3xfs2IJOsTc5snYKIl-PQDDPCAkdw4ucLY-UvBdkFgkpZrY9VgmMIGM7BHWwwYtfQv60gPzO9FFG-azvAeleI3vyByORF6jrTvVpLCtgBpdsbSGc39TERGyr0gqu3qvovr5WCsC0CW_4SPGs69pTgKSK0SpPvviDeKtX361O8CLoA0WVduUSgIM-Xswweyt3KS8EDsB_q8PqlA_O5xA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://authv2.hamuga.mn/oidc/v1/userinfo",
+							"protocol": "http",
+							"host": [
+								"authv2",
+								"hamuga",
+								"mn"
+							],
+							"path": [
+								"oidc",
+								"v1",
+								"userinfo"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Kong Consumer",
+			"item": [
+				{
+					"name": "create consumer",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"username\": \"test@example.com112244\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://172.16.3.59:8001/consumers",
+							"protocol": "http",
+							"host": [
+								"172",
+								"16",
+								"3",
+								"59"
+							],
+							"port": "8001",
+							"path": [
+								"consumers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create consumer api-key",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://172.16.3.59:8001/consumers/2e8f552a-ccfa-4d98-a6e2-c56526155673/key-auth",
+							"protocol": "http",
+							"host": [
+								"172",
+								"16",
+								"3",
+								"59"
+							],
+							"port": "8001",
+							"path": [
+								"consumers",
+								"2e8f552a-ccfa-4d98-a6e2-c56526155673",
+								"key-auth"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create consumer ACL",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"group\": \"a440d385-0eca-4e37-aba5-e50c59781e7c\",\n    \"tags\": [\"1\"]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://172.16.3.59:8001/consumers/2e8f552a-ccfa-4d98-a6e2-c56526155673/acls",
+							"protocol": "http",
+							"host": [
+								"172",
+								"16",
+								"3",
+								"59"
+							],
+							"port": "8001",
+							"path": [
+								"consumers",
+								"2e8f552a-ccfa-4d98-a6e2-c56526155673",
+								"acls"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Synce consumer ACL",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"group\": \"2e8f552a-ccfa-4d98-a6e2-c56526155673\",\n    \"tags\": [\"\"]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:7001/api/kong/consumer/acl/sync",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "7001",
+							"path": [
+								"api",
+								"kong",
+								"consumer",
+								"acl",
+								"sync"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Kong Consumer ACL",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjI0MjgwMDQwNTE2MTk2NzYxOSIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwOi8vYXV0aHYyLmhhbXVnYS5tbiIsInN1YiI6IjI0MDgyNDc3OTQxMjYwMjg4MyIsImF1ZCI6WyIyNDA4MjE0MTc2MTA5MDM1NTVAZGV2ZWxvcGVyX3BvcnRhbCIsIjI0MjExMDQ2MjE2OTI1MTg0M0BkZXZlbG9wZXJfcG9ydGFsIiwiMjQwODI3MTIyNDUxNTQ2MTE1QGRldmVsb3Blcl9wb3J0YWwiLCIyMzg2NDUwNDIyMzc5MzE1MjMiXSwiZXhwIjoxNzAxMjU5NTM5LCJpYXQiOjE3MDEyMTYzMzksIm5iZiI6MTcwMTIxNjMzOSwianRpIjoiMjQyODAwNDM5MTg2MTYxNjY3In0.zDsqAagQYw1JzjKvRtra583-535RrAXNoP0w9jRJl7kCRLnJRnRZASpVw8zznjViseStjy9WcymLKn-MF-X4UnrQEo_Hfe9bUMy178frYY3fiEwWcx3wWSF7TRFalAy0O60AYWi01KJl3NZpq3R6MJmnbMPYZyLVDnVGfifMbpjxQy6rXagnvQ4f7xo524k7y8MN_Vjt4BYZR0krzkxIffdaq9jFYdCpTzsOjpykMoWiSySLjmUTvoT1j87-D-7Rg3HOmDbKaohokJ5c3xS3pRf9Pl-qg3423ox_1bJO6qxrzlh_1D6Ntrmaj7PFoxCZ6uAOAHlKSDU_4zQO2ngn_w",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"group\": \"a440d385-0eca-4e37-aba5-e50c59781e7c\",\n    \"tags\": [\"1\"]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:7001/api/kong/consumer/acl/create/2e8f552a-ccfa-4d98-a6e2-c56526155673",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "7001",
+							"path": [
+								"api",
+								"kong",
+								"consumer",
+								"acl",
+								"create",
+								"2e8f552a-ccfa-4d98-a6e2-c56526155673"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "List Kong Consumer ACL",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjI0MjgwMDQwNTE2MTk2NzYxOSIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwOi8vYXV0aHYyLmhhbXVnYS5tbiIsInN1YiI6IjI0MDgyNDc3OTQxMjYwMjg4MyIsImF1ZCI6WyIyNDA4MjE0MTc2MTA5MDM1NTVAZGV2ZWxvcGVyX3BvcnRhbCIsIjI0MjExMDQ2MjE2OTI1MTg0M0BkZXZlbG9wZXJfcG9ydGFsIiwiMjQwODI3MTIyNDUxNTQ2MTE1QGRldmVsb3Blcl9wb3J0YWwiLCIyMzg2NDUwNDIyMzc5MzE1MjMiXSwiZXhwIjoxNzAxMjU5NTM5LCJpYXQiOjE3MDEyMTYzMzksIm5iZiI6MTcwMTIxNjMzOSwianRpIjoiMjQyODAwNDM5MTg2MTYxNjY3In0.zDsqAagQYw1JzjKvRtra583-535RrAXNoP0w9jRJl7kCRLnJRnRZASpVw8zznjViseStjy9WcymLKn-MF-X4UnrQEo_Hfe9bUMy178frYY3fiEwWcx3wWSF7TRFalAy0O60AYWi01KJl3NZpq3R6MJmnbMPYZyLVDnVGfifMbpjxQy6rXagnvQ4f7xo524k7y8MN_Vjt4BYZR0krzkxIffdaq9jFYdCpTzsOjpykMoWiSySLjmUTvoT1j87-D-7Rg3HOmDbKaohokJ5c3xS3pRf9Pl-qg3423ox_1bJO6qxrzlh_1D6Ntrmaj7PFoxCZ6uAOAHlKSDU_4zQO2ngn_w",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"page_no\": 1,\n    \"per_page\": 5,\n    \"sort\": \"created_at asc\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:7001/api/kong/consumer/acl/list",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "7001",
+							"path": [
+								"api",
+								"kong",
+								"consumer",
+								"acl",
+								"list"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Kong Consumer ACL",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:7001/api/kong/consumer/acl/create/2e8f552a-ccfa-4d98-a6e2-c56526155673",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "7001",
+							"path": [
+								"api",
+								"kong",
+								"consumer",
+								"acl",
+								"create",
+								"2e8f552a-ccfa-4d98-a6e2-c56526155673"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Sync_Consumer",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:7001/api/kong/sync/consumers",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "7001",
+							"path": [
+								"api",
+								"kong",
+								"sync",
+								"consumers"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Kong Service",
+			"item": [
+				{
+					"name": "Sync_Service",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:7001/api/service/sync",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "7001",
+							"path": [
+								"api",
+								"service",
+								"sync"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Sync_ServiceConsumption",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:7001/api/service/add/consumption",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "7001",
+							"path": [
+								"api",
+								"service",
+								"add",
+								"consumption"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Sync_Service_IP_restriction",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:7001/api/service/sync/ip-restriction",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "7001",
+							"path": [
+								"api",
+								"service",
+								"sync",
+								"ip-restriction"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Sync_Service_Latency",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:7001/api/service/add/latency_popularity_Sl",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "7001",
+							"path": [
+								"api",
+								"service",
+								"add",
+								"latency_popularity_Sl"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "List Kong Service List",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjI0MzUzNTc5NDk5ODg3MDAxOSIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwOi8vYXV0aHYyLmhhbXVnYS5tbiIsInN1YiI6IjI0MDgyNDc3OTQxMjYwMjg4MyIsImF1ZCI6WyIyNDA4MjE0MTc2MTA5MDM1NTVAZGV2ZWxvcGVyX3BvcnRhbCIsIjI0MjExMDQ2MjE2OTI1MTg0M0BkZXZlbG9wZXJfcG9ydGFsIiwiMjQwODI3MTIyNDUxNTQ2MTE1QGRldmVsb3Blcl9wb3J0YWwiLCIyMzg2NDUwNDIyMzc5MzE1MjMiXSwiZXhwIjoxNzAxNzAzNzA1LCJpYXQiOjE3MDE2NjA1MDUsIm5iZiI6MTcwMTY2MDUwNSwianRpIjoiMjQzNTQ1NjI2OTY3NTM5NzE1In0.WRfmKc6dSDnJMowiJRJRoyB5INfmTXXj4KwOtvym17qCWWW5FX5ZuBUX_D93PovULEZsR4CKM0ehsFgI5KpJRsas5aTHHNp1MHsS5XT6ADPZ8rk-QZmFsGIA6-ZIVl_gM9fXu08pCyLU4xGVZEdvr7Luy9jrRzM29VdgF9H8_7kBIN8Lgfld92_fKZ0gLLX5MbyKO2o8OWw4Cs1ubs35Qwxj1Ih7igxsubPzJKuZWLh2HWo8nmzP_dn6arJEuHJssQXpDYQ00SbjYT5I_UMPfWJmOCtbKOAJI4U92mwsLeTVyXfby8ZDVrc8m4dBPFMRk20iRtM1kr7BX1oPf1YmHg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"page_no\":0,\n    \"per_page\":10,\n    \"sort\":\"consumption desc\",\n    \"GlobOperation\":\"\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:7001/api/service/list",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "7001",
+							"path": [
+								"api",
+								"service",
+								"list"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "service_route",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"page_no\": 1,\n    \"per_page\": 5,\n    \"sort\": \"created_at asc\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:7001/api/service-route/list",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "7001",
+							"path": [
+								"api",
+								"service-route",
+								"list"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Service/:id",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:7001/api/service/92",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "7001",
+							"path": [
+								"api",
+								"service",
+								"92"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Service/:id Copy",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:7001/api/service/92",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "7001",
+							"path": [
+								"api",
+								"service",
+								"92"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Kong Route",
+			"item": [
+				{
+					"name": "Sync_Route",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:7001/api/admin/sync/route",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "7001",
+							"path": [
+								"api",
+								"admin",
+								"sync",
+								"route"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update_Route",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"service\": {\n        \"id\": \"98a1a79e-dd00-48ff-ba04-9cee0e34f3c2\"\n    },\n    \"name\": \"TEST\",\n    \"paths\": [\n        \"/test\"\n    ],\n    \"methods\": [\n        \"GET\"\n    ],\n    \"price\": 10001,\n    \"enabled\": true,\n    \"rate_limit_config\": {\n        \"enabled\": false,\n        \"limited_by\": \"\",\n        \"fault_tolerant\": false,\n        \"header_name\": \"\",\n        \"hide_client_headers\": false,\n        \"path\": \"\",\n        \"policy\": \"\",\n        \"sync_rate\": null,\n        \"year\": \"\",\n        \"month\": \"\",\n        \"day\": \"51\",\n        \"hour\": \"\",\n        \"minute\": \"\",\n        \"second\": \"\",\n        \"error_code\": null,\n        \"error_message\": \"\"\n    },\n    \"hosts\": null,\n    \"protocols\": null,\n    \"id\": \"6b110569-1985-4c0d-b651-7c82e1354948\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:7001/api/admin/route",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "7001",
+							"path": [
+								"api",
+								"admin",
+								"route"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Update DB Sync",
+			"item": [
+				{
+					"name": "Kong/update",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://172.16.3.135:7001/api/update/db",
+							"protocol": "http",
+							"host": [
+								"172",
+								"16",
+								"3",
+								"135"
+							],
+							"port": "7001",
+							"path": [
+								"api",
+								"update",
+								"db"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Kong/update Copy",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:7001/api/update/db",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "7001",
+							"path": [
+								"api",
+								"update",
+								"db"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get by ID ACL",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:7001/api/kong/consumer/acl/get/cee1963e-ac53-49ba-bb23-ae304390f3b7",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "7001",
+							"path": [
+								"api",
+								"kong",
+								"consumer",
+								"acl",
+								"get",
+								"cee1963e-ac53-49ba-bb23-ae304390f3b7"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Analytic",
+			"item": [
+				{
+					"name": "Analytic_LIST",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"page_no\": 1,\n    \"per_page\": 10000000,\n    \"sort\": \"created_at asc\",\n    \"start_day\": 0,\n    \"end_day\": 7,\n    \"app_id\": \"6c898166-53da-479b-a3c5-807cb0693840\",\n    \"service_id\":[\"c9da37c4-e600-4506-bd5f-80794f1f3d13\"],\n    \"endpoint_id\":[\"/map02/poi2/search2\",\"/map02/api/getoptroute\"]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:7001/api/service/list",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "7001",
+							"path": [
+								"api",
+								"service",
+								"list"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Analytic_LIST Copy",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"page_no\": 1,\n    \"per_page\": 1000,\n    \"sort\": \"time_stamp asc\",\n    \"start_day\": \"2024-02-13T00:00:00Z\",\n    \"end_day\": \"2024-02-20T00:00:00Z\",\n    \"app_id\": \"6c898166-53da-479b-a3c5-807cb0693840\",\n    \"service_id\":[\"e3558e8f-7742-46e5-9627-bc368a303b29\"],\n    \"endpoint_id\":[\"/headers\"]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://backend.hamuga.mn/api/analytic/list",
+							"protocol": "https",
+							"host": [
+								"backend",
+								"hamuga",
+								"mn"
+							],
+							"path": [
+								"api",
+								"analytic",
+								"list"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Analytic_Graph",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"start_day\": \"2024-01-15T15:31:26.034Z\",\n\t\"end_day\": \"2024-02-22T15:31:26.034Z\",\n\t\"app_id\": \"6c898166-53da-479b-a3c5-807cb0693840\",\n\t\"service_id\": [\n\t\t\"c4ec11a9-3b20-4b92-b503-fa4a54a0c708\",\n\t\t\"c9da37c4-e600-4506-bd5f-80794f1f3d13\"\n\t],\n\t\"endpoint_id\": [\n\t],\n\t\"page_no\": 1,\n\t\"per_page\": 10,\n\t\"sort\": \"time_stamp desc\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:7001/api/analytic/graph",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "7001",
+							"path": [
+								"api",
+								"analytic",
+								"graph"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Analytic_Graph Copy",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{   \n   \"start_day\": \"2024-02-13T00:00:00Z\",\n    \"end_day\": \"2024-02-20T00:00:00Z\",\n    \"app_id\": \"6c898166-53da-479b-a3c5-807cb0693840\",\n    \"service_id\":[\"e3558e8f-7742-46e5-9627-bc368a303b29\"],\n    \"endpoint_id\":[\"/map/bus/rot_stop_by_route\"],\n    \"sort\":\"time_stamp desc\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://backend.hamuga.mn/api/analytic/graph",
+							"protocol": "https",
+							"host": [
+								"backend",
+								"hamuga",
+								"mn"
+							],
+							"path": [
+								"api",
+								"analytic",
+								"graph"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Analytic_Graph Copy",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{   \n   \"start_day\": \"2024-02-13T00:00:00Z\",\n    \"end_day\": \"2024-02-21T00:00:00Z\",\n    \"app_id\": \"6c898166-53da-479b-a3c5-807cb0693840\",\n    \"service_id\":[\"c9da37c4-e600-4506-bd5f-80794f1f3d13\"],\n    \"endpoint_id\":[\"b475679d-784b-4332-be58-c683b72cc43e\", \"65301a3f-5126-462f-844f-3628d40e1df9\"],\n    \"sort\":\"time_stamp desc\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://backend.hamuga.mn/api/analytic/graph",
+							"protocol": "https",
+							"host": [
+								"backend",
+								"hamuga",
+								"mn"
+							],
+							"path": [
+								"api",
+								"analytic",
+								"graph"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Analytic Copy",
+			"item": [
+				{
+					"name": "Analytic_LIST",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"page_no\": 1,\n    \"per_page\": 10000000,\n    \"sort\": \"created_at asc\",\n    \"start_day\": 0,\n    \"end_day\": 7,\n    \"app_id\": \"6c898166-53da-479b-a3c5-807cb0693840\",\n    \"service_id\":[\"c9da37c4-e600-4506-bd5f-80794f1f3d13\"],\n    \"endpoint_id\":[\"/map02/poi2/search2\",\"/map02/api/getoptroute\"]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:7001/api/service/list",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "7001",
+							"path": [
+								"api",
+								"service",
+								"list"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Control-Panel list",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"page_no\": 1,\n    \"per_page\": 1000,\n    \"sort\": \"time_stamp asc\",\n    \"start_day\": \"2024-01-20T00:00:00Z\",\n    \"end_day\": \"2024-01-28T00:00:00Z\",\n    \"app_id\": [\"6c898166-53da-479b-a3c5-807cb0693840\"],\n    \"service_id\":[\"c9da37c4-e600-4506-bd5f-80794f1f3d13\"]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:7001/api/control-panel/list",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "7001",
+							"path": [
+								"api",
+								"control-panel",
+								"list"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ControlPanel_Graph",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{   \n    \"start_day\": \"2024-02-04T00:00:00Z\",\n    \"end_day\": \"2024-02-06T00:00:00Z\",\n    \"app_id\": [\"6c898166-53da-479b-a3c5-807cb0693840\"],\n    \"service_id\":[\"c9da37c4-e600-4506-bd5f-80794f1f3d13\"]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:7001/api/control-panel/graph",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "7001",
+							"path": [
+								"api",
+								"control-panel",
+								"graph"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ControlPanel_Graph Copy",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{   \n    \"start_day\": \"2024-02-04T00:00:00Z\",\n    \"end_day\": \"2024-02-06T00:00:00Z\",\n    \"app_id\": [\"6c898166-53da-479b-a3c5-807cb0693840\"],\n    \"service_id\":[\"c9da37c4-e600-4506-bd5f-80794f1f3d13\"]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:7001/api/control-panel/graph",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "7001",
+							"path": [
+								"api",
+								"control-panel",
+								"graph"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Analytic Admin",
+			"item": [
+				{
+					"name": "Analytic_LIST",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"page_no\": 1,\n    \"per_page\": 10,\n    \"start_day\": \"2024-01-27T00:00:00Z\",\n    \"end_day\": \"2024-02-05T00:00:00Z\",\n    \"sort\": \"time_stamp ASC\",\n    \"user_sub\":[\"247889795261399043\"],\n    \"app_id\" : [\"adb15fdc-e6f6-48ce-9105-eb8ec80d3aa1\", \"ff430cad-8580-4217-a440-042e0637b540\"] //5b1f9d1f-d424-4bd0-bae3-657272af087c\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:7001/api/admin/control-panel/list",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "7001",
+							"path": [
+								"api",
+								"admin",
+								"control-panel",
+								"list"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ControlPanel_Graph",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{   \n    \"start_day\": \"2024-01-27T00:00:00Z\",\n    \"end_day\": \"2024-02-05T00:00:00Z\",\n    \"user_sub\":[\"247889795261399043\"],\n    \"app_id\" : [\"adb15fdc-e6f6-48ce-9105-eb8ec80d3aa1\", \"ff430cad-8580-4217-a440-042e0637b540\"]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:7001/api/admin/control-panel/graph",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "7001",
+							"path": [
+								"api",
+								"admin",
+								"control-panel",
+								"graph"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Elastic",
+			"item": [
+				{
+					"name": "Elastic",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "apiKey",
+								"value": "Jyenmv10BRuuVo4rNHfxyPXEwYK1eorW",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:7001/api/elastic/sync",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "7001",
+							"path": [
+								"api",
+								"elastic",
+								"sync"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Admin",
+			"item": [
+				{
+					"name": "ReferenceList",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"default_param\": [\n    {\n      \"key\": \"string\",\n      \"value\": \"string\"\n    }\n  ],\n  \"filter\": [\n    {\n      \"field_name\": \"code\",\n      \"field_type\": \"string\",\n      \"operation\": \"=\",\n      \"value\": \"TAG\"\n    }\n  ],\n  \"page_no\": 1,\n  \"per_page\": 100,\n  \"sort\": \"order_number asc\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://backend.hamuga.mn/api/admin/tag/list",
+							"protocol": "https",
+							"host": [
+								"backend",
+								"hamuga",
+								"mn"
+							],
+							"path": [
+								"api",
+								"admin",
+								"tag",
+								"list"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ReferenceCodeList",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:7001/api/admin/reference-code/list",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "7001",
+							"path": [
+								"api",
+								"admin",
+								"reference-code",
+								"list"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ReferenceCreate",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\":\"SumyaTest4\",\n    \"description\":\"Sumagiih\",\n    \"order_number\":20,\n    \"code\": \"TEST\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://127.0.0.1:7001/api/admin/tag/create",
+							"protocol": "https",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "7001",
+							"path": [
+								"api",
+								"admin",
+								"tag",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ReferenceDelete Copy",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\":\"Test10\",\n    \"description\":\"Sumyagiih\",\n    \"order\":1,\n    \"field1\":\"\",\n    \"field2\":\"\",\n    \"field3\":\"\",\n    \"code\": \"provider\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:7001/api/tag/delete",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "7001",
+							"path": [
+								"api",
+								"tag",
+								"delete"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ReferenceUpdate",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\":\"stest3\",\n    \"description\":\"Sumyagiih\",\n    \"order_number\":1,\n    \"field1\":\"\",\n    \"field2\":\"\",\n    \"field3\":\"\",\n    \"code\": \"TEST\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:7001/api/admin/tag/109",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "7001",
+							"path": [
+								"api",
+								"admin",
+								"tag",
+								"109"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "code to Token",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "grant_type",
+							"value": "authorization_code",
+							"type": "text"
+						},
+						{
+							"key": "code",
+							"value": "Uqb6LR0-TgrZqppwKeVZlBdKi0k0m5ks_q9qcQU2O_FQZA",
+							"type": "text"
+						},
+						{
+							"key": "client_id",
+							"value": "240821417610903555@developer_portal",
+							"type": "text"
+						},
+						{
+							"key": "client_secret",
+							"value": "PMp0A8qtxxyLlsw3e8qJDL6biZJ4dSsPvo1NTwKj6qqMnKIkxrgQqSLVKoUQtvVg",
+							"type": "text"
+						},
+						{
+							"key": "redirect_uri",
+							"value": "https://oidcdebugger.com/debug",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://authv2.hamuga.mn/oauth/v2/token",
+					"protocol": "http",
+					"host": [
+						"authv2",
+						"hamuga",
+						"mn"
+					],
+					"path": [
+						"oauth",
+						"v2",
+						"token"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "key-auth",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://172.16.3.59:8001/consumers",
+					"protocol": "http",
+					"host": [
+						"172",
+						"16",
+						"3",
+						"59"
+					],
+					"port": "8001",
+					"path": [
+						"consumers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "list plugins",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\": \"test@example.com112233\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://172.16.3.59:8001/consumers",
+					"protocol": "http",
+					"host": [
+						"172",
+						"16",
+						"3",
+						"59"
+					],
+					"port": "8001",
+					"path": [
+						"consumers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Swagger",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:7001/swagger/doc.json",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "7001",
+					"path": [
+						"swagger",
+						"doc.json"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Swagger.index",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.0.29:7001/swagger/index.hmtl",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"29"
+					],
+					"port": "7001",
+					"path": [
+						"swagger",
+						"index.hmtl"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Sumya_Test",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "apiKey",
+						"value": "DUU4zmfTw27Xk1l5bMKgN5F7JXGxy7on",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:7001/api/elastic/update",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "7001",
+					"path": [
+						"api",
+						"elastic",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "nomad_gitway endpoint test",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://172.16.3.133/api/service/list",
+					"protocol": "http",
+					"host": [
+						"172",
+						"16",
+						"3",
+						"133"
+					],
+					"path": [
+						"api",
+						"service",
+						"list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "apiKey",
+						"value": "KcXKg0XYEd91rH6V3IkW3TgQE93R3ZkY",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "sumya.khamuga.mn/profile",
+					"host": [
+						"sumya",
+						"khamuga",
+						"mn"
+					],
+					"path": [
+						"profile"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

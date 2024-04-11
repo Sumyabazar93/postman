@@ -1,0 +1,242 @@
+{
+	"info": {
+		"_postman_id": "c0d06d1c-0322-4fbd-a2b9-a66dd2efa323",
+		"name": "Immovable_heritage_protection_evaluation",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27820006"
+	},
+	"item": [
+		{
+			"name": "Immovable_heritage_protection_evaluation",
+			"item": [
+				{
+					"name": "List",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"page_no\": 1,\n    \"per_page\": 5\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3010/immovable/heritage/reference/protection/evalution/list",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3010",
+							"path": [
+								"immovable",
+								"heritage",
+								"reference",
+								"protection",
+								"evalution",
+								"list"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"parent_id\": \"fe50dfe3-c5eb-42a5-ae5a-c595eccefd94\",\n    \"score\": \"2-9\",\n    \"damage_evaluation_name\": \"Сайн\",\n    \"damage_evaluation_color\": \"green\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3010/immovable/heritage/reference/protection/evalution/create",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3010",
+							"path": [
+								"immovable",
+								"heritage",
+								"reference",
+								"protection",
+								"evalution",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:3010/immovable/heritage/reference/protection/evalution/84c099c4-6c20-4897-852f-a135d26a69b7/delete",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3010",
+							"path": [
+								"immovable",
+								"heritage",
+								"reference",
+								"protection",
+								"evalution",
+								"84c099c4-6c20-4897-852f-a135d26a69b7",
+								"delete"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "edit",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"parent_id\": \"fe50dfe3-c5eb-42a5-ae5a-c595eccefd94\",\n    \"score\": \"0-10\",\n    \"damage_evaluation_name\": \"Сайн\",\n    \"damage_evaluation_color\": \"ref\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3010/immovable/heritage/reference/protection/evalution/fcfc1f84-f007-4e7d-9134-5eb86859f5d6/edit",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3010",
+							"path": [
+								"immovable",
+								"heritage",
+								"reference",
+								"protection",
+								"evalution",
+								"fcfc1f84-f007-4e7d-9134-5eb86859f5d6",
+								"edit"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"parent_id\": \"fe50dfe3-c5eb-42a5-ae5a-c595eccefd94\",\n    \"score\": \"0-10\",\n    \"damage_evaluation_name\": \"Сайн\",\n    \"damage_evaluation_color\": \"ref\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3010/immovable/heritage/reference/protection/evalution/fcfc1f84-f007-4e7d-9134-5eb86859f5d6/get",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3010",
+							"path": [
+								"immovable",
+								"heritage",
+								"reference",
+								"protection",
+								"evalution",
+								"fcfc1f84-f007-4e7d-9134-5eb86859f5d6",
+								"get"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,4144 @@
+{
+	"info": {
+		"_postman_id": "0a6a4c50-aa3d-4c56-a3ae-dbc394a40cec",
+		"name": "iMap",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27820006"
+	},
+	"item": [
+		{
+			"name": "Hamuga",
+			"item": [
+				{
+					"name": "API",
+					"item": [
+						{
+							"name": "adminServiceUrl",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{hamuga_url}}admin/v1",
+									"host": [
+										"{{hamuga_url}}admin"
+									],
+									"path": [
+										"v1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "authServiceUrl",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{hamuga_url}}auth/v1",
+									"host": [
+										"{{hamuga_url}}auth"
+									],
+									"path": [
+										"v1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "issuer",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{hamuga_url}}",
+									"host": [
+										"{{hamuga_url}}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "mgmtServiceUrl",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{hamuga_url}}/management/v1",
+									"host": [
+										"{{hamuga_url}}"
+									],
+									"path": [
+										"management",
+										"v1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "authorization_endpoint",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{hamuga_url}}/oauth/v2/authorize",
+									"host": [
+										"{{hamuga_url}}"
+									],
+									"path": [
+										"oauth",
+										"v2",
+										"authorize"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "device_authorization_endpoint",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{hamuga_url}}/oauth/v2/device_authorization",
+									"host": [
+										"{{hamuga_url}}"
+									],
+									"path": [
+										"oauth",
+										"v2",
+										"device_authorization"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "end_session_endpoint",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{hamuga_url}}/oidc/v1/end_session",
+									"host": [
+										"{{hamuga_url}}"
+									],
+									"path": [
+										"oidc",
+										"v1",
+										"end_session"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "introspection_endpoint",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{hamuga_url}}/oauth/v2/introspect",
+									"host": [
+										"{{hamuga_url}}"
+									],
+									"path": [
+										"oauth",
+										"v2",
+										"introspect"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "mgmtServiceUrl Copy",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{hamuga_url}}/management/v1",
+									"host": [
+										"{{hamuga_url}}"
+									],
+									"path": [
+										"management",
+										"v1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "jwks_uri",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{hamuga_bearer_token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{hamuga_url}}oauth/v2/keys",
+									"host": [
+										"{{hamuga_url}}oauth"
+									],
+									"path": [
+										"v2",
+										"keys"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "revocation_endpoint",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{hamuga_bearer_token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{hamuga_url}}/oauth/v2/revoke",
+									"host": [
+										"{{hamuga_url}}"
+									],
+									"path": [
+										"oauth",
+										"v2",
+										"revoke"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "token_endpoint",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{hamuga_bearer_token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{hamuga_url}}/oauth/v2/token",
+									"host": [
+										"{{hamuga_url}}"
+									],
+									"path": [
+										"oauth",
+										"v2",
+										"token"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "userinfo_endpoint",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{hamuga_bearer_token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{hamuga_url}}/oidc/v1/userinfo",
+									"host": [
+										"{{hamuga_url}}"
+									],
+									"path": [
+										"oidc",
+										"v1",
+										"userinfo"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "User",
+					"item": [
+						{
+							"name": "Hamuga - Login - Get Code",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"",
+											"pm.test(\"Response status code is 200\", function () {",
+											"    pm.expect(pm.response.code).to.equal(200);",
+											"});",
+											"",
+											"",
+											"pm.test(\"Login form has a hidden input field for CSRF token\", function () {",
+											"    const responseData = pm.response.text();",
+											"    ",
+											"    pm.expect(responseData).to.include('<input type=\"hidden\" name=\"gorilla.csrf.Token\"');",
+											"});",
+											"",
+											"",
+											"pm.test(\"Login form has a hidden input field for authRequestID\", function () {",
+											"    const responseData = pm.response.text();",
+											"",
+											"    pm.expect(responseData).to.include('<input type=\"hidden\" name=\"authRequestID\"', 'Hidden input field for authRequestID exists');",
+											"});",
+											"",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "// http://authv2.hamuga.mn/oauth/v2/authorize?client_id=241535588514201603@imap-dev&redirect_uri=http://localhost:3000/user&response_type=code&scope=openid%20email%20profile%20address%20offline_access"
+								},
+								"url": {
+									"raw": "{{hamuga_url}}oauth/v2/authorize?client_id={{client_id}}&redirect_uri={{redirect_uri}}&response_type={{response_type}}&scope={{scope}}",
+									"host": [
+										"{{hamuga_url}}oauth"
+									],
+									"path": [
+										"v2",
+										"authorize"
+									],
+									"query": [
+										{
+											"key": "client_id",
+											"value": "{{client_id}}"
+										},
+										{
+											"key": "redirect_uri",
+											"value": "{{redirect_uri}}"
+										},
+										{
+											"key": "response_type",
+											"value": "{{response_type}}"
+										},
+										{
+											"key": "scope",
+											"value": "{{scope}}"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Hamuga - Login By Code",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"",
+											"pm.test(\"Response status code is 200\", function () {",
+											"    pm.expect(pm.response.code).to.equal(200);",
+											"});",
+											"",
+											"",
+											"pm.test(\"Login form has a hidden input field for CSRF token\", function () {",
+											"    const responseData = pm.response.text();",
+											"    ",
+											"    pm.expect(responseData).to.include('<input type=\"hidden\" name=\"gorilla.csrf.Token\"');",
+											"});",
+											"",
+											"",
+											"pm.test(\"Login form has a hidden input field for authRequestID\", function () {",
+											"    const responseData = pm.response.text();",
+											"",
+											"    pm.expect(responseData).to.include('<input type=\"hidden\" name=\"authRequestID\"', 'Hidden input field for authRequestID exists');",
+											"});",
+											"",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "mR31JeFrumm5NfgfSxnjV4uPUsietHYa2bX6UWBymqL3FgQ3hJtbhnvB3MIT5drz",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "241535588514201603@imap-dev",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{hamuga_url}}oauth/v2/token?grant_type=authorization_code&code=2qmQFmjBGFhU3T49GON-AYFbxQHDvvKDPOYEbBQsuXwO1Q&redirect_uri=http://localhost:3000/user",
+									"host": [
+										"{{hamuga_url}}oauth"
+									],
+									"path": [
+										"v2",
+										"token"
+									],
+									"query": [
+										{
+											"key": "grant_type",
+											"value": "authorization_code"
+										},
+										{
+											"key": "code",
+											"value": "2qmQFmjBGFhU3T49GON-AYFbxQHDvvKDPOYEbBQsuXwO1Q"
+										},
+										{
+											"key": "redirect_uri",
+											"value": "http://localhost:3000/user"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Hamuga - Logout",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"",
+											"pm.test(\"Response status code is 200\", function () {",
+											"    pm.expect(pm.response.code).to.equal(200);",
+											"});",
+											"",
+											"",
+											"pm.test(\"Login form has a hidden input field for CSRF token\", function () {",
+											"    const responseData = pm.response.text();",
+											"    ",
+											"    pm.expect(responseData).to.include('<input type=\"hidden\" name=\"gorilla.csrf.Token\"');",
+											"});",
+											"",
+											"",
+											"pm.test(\"Login form has a hidden input field for authRequestID\", function () {",
+											"    const responseData = pm.response.text();",
+											"",
+											"    pm.expect(responseData).to.include('<input type=\"hidden\" name=\"authRequestID\"', 'Hidden input field for authRequestID exists');",
+											"});",
+											"",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{hamuga_url}}oidc/v1/end_session?id_token_hint={{hamuga_id_token}}&state=random_string&post_logout_redirect_uri={{logout_uri}}",
+									"host": [
+										"{{hamuga_url}}oidc"
+									],
+									"path": [
+										"v1",
+										"end_session"
+									],
+									"query": [
+										{
+											"key": "id_token_hint",
+											"value": "{{hamuga_id_token}}"
+										},
+										{
+											"key": "state",
+											"value": "random_string"
+										},
+										{
+											"key": "post_logout_redirect_uri",
+											"value": "{{logout_uri}}"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Hamuga - User Info",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"",
+											"pm.test(\"Response status code is 200\", function () {",
+											"    pm.expect(pm.response.code).to.equal(200);",
+											"});",
+											"",
+											"",
+											"pm.test(\"Login form has a hidden input field for CSRF token\", function () {",
+											"    const responseData = pm.response.text();",
+											"    ",
+											"    pm.expect(responseData).to.include('<input type=\"hidden\" name=\"gorilla.csrf.Token\"');",
+											"});",
+											"",
+											"",
+											"pm.test(\"Login form has a hidden input field for authRequestID\", function () {",
+											"    const responseData = pm.response.text();",
+											"",
+											"    pm.expect(responseData).to.include('<input type=\"hidden\" name=\"authRequestID\"', 'Hidden input field for authRequestID exists');",
+											"});",
+											"",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{hamuga_access_token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{hamuga_url}}oidc/v1/userinfo",
+									"host": [
+										"{{hamuga_url}}oidc"
+									],
+									"path": [
+										"v1",
+										"userinfo"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Hamuga - User Oauth Token - test",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"",
+											"pm.test(\"Response status code is 200\", function () {",
+											"    pm.expect(pm.response.code).to.equal(200);",
+											"});",
+											"",
+											"",
+											"pm.test(\"Login form has a hidden input field for CSRF token\", function () {",
+											"    const responseData = pm.response.text();",
+											"    ",
+											"    pm.expect(responseData).to.include('<input type=\"hidden\" name=\"gorilla.csrf.Token\"');",
+											"});",
+											"",
+											"",
+											"pm.test(\"Login form has a hidden input field for authRequestID\", function () {",
+											"    const responseData = pm.response.text();",
+											"",
+											"    pm.expect(responseData).to.include('<input type=\"hidden\" name=\"authRequestID\"', 'Hidden input field for authRequestID exists');",
+											"});",
+											"",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "grant_type",
+											"value": "client_credentials",
+											"type": "text"
+										},
+										{
+											"key": "client_id",
+											"value": "{{client_id}}",
+											"type": "text"
+										},
+										{
+											"key": "client_secret",
+											"value": "{{client_secret}}",
+											"type": "text"
+										},
+										{
+											"key": "scope",
+											"value": "openid",
+											"type": "text"
+										},
+										{
+											"key": "grant_type",
+											"value": "urn:ietf:params:oauth:grant-type:jwt-bearer",
+											"type": "text",
+											"disabled": true
+										}
+									]
+								},
+								"url": {
+									"raw": "{{hamuga_url}}oauth/v2/token",
+									"host": [
+										"{{hamuga_url}}oauth"
+									],
+									"path": [
+										"v2",
+										"token"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Hamuga - Delete",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"",
+											"pm.test(\"Response status code is 200\", function () {",
+											"    pm.expect(pm.response.code).to.equal(200);",
+											"});",
+											"",
+											"",
+											"pm.test(\"Login form has a hidden input field for CSRF token\", function () {",
+											"    const responseData = pm.response.text();",
+											"    ",
+											"    pm.expect(responseData).to.include('<input type=\"hidden\" name=\"gorilla.csrf.Token\"');",
+											"});",
+											"",
+											"",
+											"pm.test(\"Login form has a hidden input field for authRequestID\", function () {",
+											"    const responseData = pm.response.text();",
+											"",
+											"    pm.expect(responseData).to.include('<input type=\"hidden\" name=\"authRequestID\"', 'Hidden input field for authRequestID exists');",
+											"});",
+											"",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{hamuga_access_token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{hamuga_url}}v1/users/246197252870111235",
+									"host": [
+										"{{hamuga_url}}v1"
+									],
+									"path": [
+										"users",
+										"246197252870111235"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Nomad Geographic",
+			"item": [
+				{
+					"name": "Main",
+					"item": [
+						{
+							"name": "Get SSID",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"let jsonData = pm.response.json();",
+											"pm.environment.set( \"nomad_ssid\", jsonData.ssid );"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{nomad_url}}map/v1/init/pc?mskey={{nomad_mskey}}",
+									"host": [
+										"{{nomad_url}}map"
+									],
+									"path": [
+										"v1",
+										"init",
+										"pc"
+									],
+									"query": [
+										{
+											"key": "mskey",
+											"value": "{{nomad_mskey}}"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "POI",
+					"item": [
+						{
+							"name": "POI2",
+							"item": [
+								{
+									"name": "List",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "https://cloudgis.mn/map02/poi2/codeTableS",
+											"protocol": "https",
+											"host": [
+												"cloudgis",
+												"mn"
+											],
+											"path": [
+												"map02",
+												"poi2",
+												"codeTableS"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "Search",
+							"item": [
+								{
+									"name": "By Name",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "LLX",
+													"value": "106.91357016563416",
+													"description": "Талбайн зүүн доод цэгийн уртраг ",
+													"type": "text"
+												},
+												{
+													"key": "LLY",
+													"value": "47.9167303325335",
+													"description": "Талбайн зүүн доод цэгийн өргөрөг ",
+													"type": "text"
+												},
+												{
+													"key": "URX",
+													"value": "106.92206740379335",
+													"description": "Талбайн баруун дээд цэгийн уртраг ",
+													"type": "text"
+												},
+												{
+													"key": "URY",
+													"value": "47.92074251641901",
+													"description": "Талбайн баруун доод цэгийн өргөрөг ",
+													"type": "text"
+												},
+												{
+													"key": "NAME",
+													"value": "дэлгүүр",
+													"description": "Хайх хаяг",
+													"type": "text"
+												},
+												{
+													"key": "CODE",
+													"value": "000000000000",
+													"description": "000000000000",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "{{nomad_url_map_v1}}poi/searchPoaName2?ssid={{nomad_ssid}}",
+											"host": [
+												"{{nomad_url_map_v1}}poi"
+											],
+											"path": [
+												"searchPoaName2"
+											],
+											"query": [
+												{
+													"key": "ssid",
+													"value": "{{nomad_ssid}}"
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "By Name - KFC",
+											"originalRequest": {
+												"method": "POST",
+												"header": [],
+												"body": {
+													"mode": "formdata",
+													"formdata": [
+														{
+															"key": "LLX",
+															"value": "106.91357016563416",
+															"description": "Талбайн зүүн доод цэгийн уртраг ",
+															"type": "text"
+														},
+														{
+															"key": "LLY",
+															"value": "47.9167303325335",
+															"description": "Талбайн зүүн доод цэгийн өргөрөг ",
+															"type": "text"
+														},
+														{
+															"key": "URX",
+															"value": "106.92206740379335",
+															"description": "Талбайн баруун дээд цэгийн уртраг ",
+															"type": "text"
+														},
+														{
+															"key": "URY",
+															"value": "47.92074251641901",
+															"description": "Талбайн баруун доод цэгийн өргөрөг ",
+															"type": "text"
+														},
+														{
+															"key": "NAME",
+															"value": "kfc",
+															"description": "Хайх хаяг",
+															"type": "text"
+														},
+														{
+															"key": "CODE",
+															"value": "000000000000",
+															"description": "000000000000",
+															"type": "text"
+														}
+													]
+												},
+												"url": {
+													"raw": "{{nomad_url}}map/v1/poi/searchPoaName2?ssid={{nomad_ssid}}",
+													"host": [
+														"{{nomad_url}}map"
+													],
+													"path": [
+														"v1",
+														"poi",
+														"searchPoaName2"
+													],
+													"query": [
+														{
+															"key": "ssid",
+															"value": "{{nomad_ssid}}"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "html",
+											"header": [
+												{
+													"key": "Date",
+													"value": "Fri, 08 Dec 2023 09:46:18 GMT"
+												},
+												{
+													"key": "Server",
+													"value": "Apache/2.4.41 (codeit) OpenSSL/1.1.1d PHP/7.3.10"
+												},
+												{
+													"key": "X-Powered-By",
+													"value": "PHP/7.3.10"
+												},
+												{
+													"key": "Expires",
+													"value": "Thu, 19 Nov 1981 08:52:00 GMT"
+												},
+												{
+													"key": "Cache-Control",
+													"value": "no-store, no-cache, must-revalidate"
+												},
+												{
+													"key": "Pragma",
+													"value": "no-cache"
+												},
+												{
+													"key": "Access-Control-Allow-Origin",
+													"value": "*"
+												},
+												{
+													"key": "Keep-Alive",
+													"value": "timeout=5, max=500"
+												},
+												{
+													"key": "Connection",
+													"value": "Keep-Alive"
+												},
+												{
+													"key": "Transfer-Encoding",
+													"value": "chunked"
+												},
+												{
+													"key": "Content-Type",
+													"value": "text/html; charset=UTF-8"
+												}
+											],
+											"cookie": [],
+											"body": "{\"t_poi_data\":[{\"poi_seq\":\"358805\",\"poi_code\":\"30901\",\"poi_title\":\"KFC\",\"poi_title_latin\":null,\"poi_atrib_0\":null,\"poi_atrib_1\":null,\"poi_atrib_2\":null,\"poi_atrib_3\":null,\"poi_atrib_4\":null,\"poi_atrib_5\":null,\"poi_atrib_6\":null,\"poi_address\":null,\"poi_address2\":\"\\u0423\\u043b\\u0430\\u0430\\u043d\\u0431\\u0430\\u0430\\u0442\\u0430\\u0440 \\u0445\\u043e\\u0442 \\u0421\\u043e\\u043d\\u0433\\u0438\\u043d\\u043e\\u0445\\u0430\\u0439\\u0440\\u0445\\u0430\\u043d \\u0434\\u04af\\u04af\\u0440\\u044d\\u0433 16-\\u0440 \\u0445\\u043e\\u0440\\u043e\\u043e 1-\\u0440 \\u0445\\u043e\\u0440\\u043e\\u043e\\u043b\\u043e\\u043b-3\",\"poi_phone1\":null,\"poi_phone2\":null,\"poi_url\":null,\"poi_image\":null,\"poi_memo\":null,\"poi_lon\":\"106.8366\",\"poi_lat\":\"47.9119\",\"poi_code1_name\":\"\",\"poi_code2_name\":\"\",\"poi_code3_name\":\"\\u0422\\u04af\\u0440\\u0433\\u044d\\u043d \\u0445\\u043e\\u043e\\u043b\",\"poi_code1_icon\":\"\",\"poi_code2_icon\":\"\",\"poi_code3_icon\":\"\",\"poi_code1\":\"\",\"poi_code2\":\"\",\"poi_code3\":\"\",\"poi_html\":\"\",\"poi_imagedir\":\"\",\"icon\":\"\",\"category_name\":\"\",\"poi_dst\":\"11252328.7411554\"},{\"poi_seq\":\"358810\",\"poi_code\":\"30901\",\"poi_title\":\"KFC\",\"poi_title_latin\":null,\"poi_atrib_0\":null,\"poi_atrib_1\":null,\"poi_atrib_2\":null,\"poi_atrib_3\":null,\"poi_atrib_4\":null,\"poi_atrib_5\":null,\"poi_atrib_6\":null,\"poi_address\":null,\"poi_address2\":\"\\u0423\\u043b\\u0430\\u0430\\u043d\\u0431\\u0430\\u0430\\u0442\\u0430\\u0440 \\u0445\\u043e\\u0442 \\u0411\\u0430\\u044f\\u043d\\u0433\\u043e\\u043b \\u0434\\u04af\\u04af\\u0440\\u044d\\u0433 19-\\u0440 \\u0445\\u043e\\u0440\\u043e\\u043e 4-\\u0440 \\u0445\\u043e\\u0440\\u043e\\u043e\\u043b\\u043e\\u043b-8\",\"poi_phone1\":null,\"poi_phone2\":null,\"poi_url\":null,\"poi_image\":null,\"poi_memo\":null,\"poi_lon\":\"106.8760\",\"poi_lat\":\"47.9222\",\"poi_code1_name\":\"\",\"poi_code2_name\":\"\",\"poi_code3_name\":\"\\u0422\\u04af\\u0440\\u0433\\u044d\\u043d \\u0445\\u043e\\u043e\\u043b\",\"poi_code1_icon\":\"\",\"poi_code2_icon\":\"\",\"poi_code3_icon\":\"\",\"poi_code1\":\"\",\"poi_code2\":\"\",\"poi_code3\":\"\",\"poi_html\":\"\",\"poi_imagedir\":\"\",\"icon\":\"\",\"category_name\":\"\",\"poi_dst\":\"11254942.1604706\"},{\"poi_seq\":\"358802\",\"poi_code\":\"30101\",\"poi_title\":\"KFC\",\"poi_title_latin\":null,\"poi_atrib_0\":null,\"poi_atrib_1\":null,\"poi_atrib_2\":null,\"poi_atrib_3\":null,\"poi_atrib_4\":null,\"poi_atrib_5\":null,\"poi_atrib_6\":null,\"poi_address\":null,\"poi_address2\":\"\\u0423\\u043b\\u0430\\u0430\\u043d\\u0431\\u0430\\u0430\\u0442\\u0430\\u0440 \\u0445\\u043e\\u0442 \\u0411\\u0430\\u044f\\u043d\\u0433\\u043e\\u043b \\u0434\\u04af\\u04af\\u0440\\u044d\\u0433 2-\\u0440 \\u0445\\u043e\\u0440\\u043e\\u043e 2-\\u0440 \\u0445\\u043e\\u0440\\u043e\\u043e\\u043b\\u043e\\u043b-1\",\"poi_phone1\":null,\"poi_phone2\":null,\"poi_url\":null,\"poi_image\":null,\"poi_memo\":null,\"poi_lon\":\"106.8804\",\"poi_lat\":\"47.9149\",\"poi_code1_name\":\"\",\"poi_code2_name\":\"\",\"poi_code3_name\":\"\\u0420\\u0435\\u0441\\u0442\\u043e\\u0440\\u0430\\u043d\",\"poi_code1_icon\":\"\",\"poi_code2_icon\":\"\",\"poi_code3_icon\":\"\",\"poi_code1\":\"\",\"poi_code2\":\"\",\"poi_code3\":\"\",\"poi_html\":\"\",\"poi_imagedir\":\"\",\"icon\":\"\",\"category_name\":\"\",\"poi_dst\":\"11255440.3687948\"},{\"poi_seq\":\"358809\",\"poi_code\":\"30901\",\"poi_title\":\"KFC\",\"poi_title_latin\":null,\"poi_atrib_0\":null,\"poi_atrib_1\":null,\"poi_atrib_2\":null,\"poi_atrib_3\":null,\"poi_atrib_4\":null,\"poi_atrib_5\":null,\"poi_atrib_6\":null,\"poi_address\":null,\"poi_address2\":\"\\u0423\\u043b\\u0430\\u0430\\u043d\\u0431\\u0430\\u0430\\u0442\\u0430\\u0440 \\u0445\\u043e\\u0442 \\u0427\\u0438\\u043d\\u0433\\u044d\\u043b\\u0442\\u044d\\u0439 \\u0434\\u04af\\u04af\\u0440\\u044d\\u0433 5-\\u0440 \\u0445\\u043e\\u0440\\u043e\\u043e 6-\\u0440 \\u0445\\u043e\\u0440\\u043e\\u043e\\u043b\\u043e\\u043b-2\",\"poi_phone1\":null,\"poi_phone2\":null,\"poi_url\":null,\"poi_image\":null,\"poi_memo\":null,\"poi_lon\":\"106.9042\",\"poi_lat\":\"47.9222\",\"poi_code1_name\":\"\",\"poi_code2_name\":\"\",\"poi_code3_name\":\"\\u0422\\u04af\\u0440\\u0433\\u044d\\u043d \\u0445\\u043e\\u043e\\u043b\",\"poi_code1_icon\":\"\",\"poi_code2_icon\":\"\",\"poi_code3_icon\":\"\",\"poi_code1\":\"\",\"poi_code2\":\"\",\"poi_code3\":\"\",\"poi_html\":\"\",\"poi_imagedir\":\"\",\"icon\":\"\",\"category_name\":\"\",\"poi_dst\":\"11256992.1020004\"},{\"poi_seq\":\"358801\",\"poi_code\":\"30101\",\"poi_title\":\"KFC\",\"poi_title_latin\":null,\"poi_atrib_0\":null,\"poi_atrib_1\":null,\"poi_atrib_2\":null,\"poi_atrib_3\":null,\"poi_atrib_4\":null,\"poi_atrib_5\":null,\"poi_atrib_6\":null,\"poi_address\":null,\"poi_address2\":\"\\u0423\\u043b\\u0430\\u0430\\u043d\\u0431\\u0430\\u0430\\u0442\\u0430\\u0440 \\u0445\\u043e\\u0442 \\u0421\\u04af\\u0445\\u0431\\u0430\\u0430\\u0442\\u0430\\u0440 \\u0434\\u04af\\u04af\\u0440\\u044d\\u0433 4-\\u0440 \\u0445\\u043e\\u0440\\u043e\\u043e 5-\\u0440 \\u0445\\u043e\\u0440\\u043e\\u043e\\u043b\\u043e\\u043b-1\",\"poi_phone1\":null,\"poi_phone2\":null,\"poi_url\":null,\"poi_image\":null,\"poi_memo\":null,\"poi_lon\":\"106.9015\",\"poi_lat\":\"47.9134\",\"poi_code1_name\":\"\",\"poi_code2_name\":\"\",\"poi_code3_name\":\"\\u0420\\u0435\\u0441\\u0442\\u043e\\u0440\\u0430\\u043d\",\"poi_code1_icon\":\"\",\"poi_code2_icon\":\"\",\"poi_code3_icon\":\"\",\"poi_code1\":\"\",\"poi_code2\":\"\",\"poi_code3\":\"\",\"poi_html\":\"\",\"poi_imagedir\":\"\",\"icon\":\"\",\"category_name\":\"\",\"poi_dst\":\"11257011.1019076\"},{\"poi_seq\":\"358812\",\"poi_code\":\"30901\",\"poi_title\":\"KFC \\u0425\\u0430\\u043d \\u0443\\u0443\\u043b \\u0441\\u0430\\u043b\\u0431\\u0430\\u0440\",\"poi_title_latin\":\"KFC Khan-Uul\",\"poi_atrib_0\":null,\"poi_atrib_1\":null,\"poi_atrib_2\":null,\"poi_atrib_3\":null,\"poi_atrib_4\":null,\"poi_atrib_5\":null,\"poi_atrib_6\":null,\"poi_address\":null,\"poi_address2\":\"\\u0423\\u043b\\u0430\\u0430\\u043d\\u0431\\u0430\\u0430\\u0442\\u0430\\u0440 \\u0445\\u043e\\u0442 \\u0425\\u0430\\u043d \\u0423\\u0443\\u043b \\u0434\\u04af\\u04af\\u0440\\u044d\\u0433 3-\\u0440 \\u0445\\u043e\\u0440\\u043e\\u043e \\u04ae\\u0439\\u043b\\u0434\\u0432\\u044d\\u0440 2-3\",\"poi_phone1\":null,\"poi_phone2\":null,\"poi_url\":null,\"poi_image\":null,\"poi_memo\":null,\"poi_lon\":\"106.8982\",\"poi_lat\":\"47.8986\",\"poi_code1_name\":\"\",\"poi_code2_name\":\"\",\"poi_code3_name\":\"\\u0422\\u04af\\u0440\\u0433\\u044d\\u043d \\u0445\\u043e\\u043e\\u043b\",\"poi_code1_icon\":\"\",\"poi_code2_icon\":\"\",\"poi_code3_icon\":\"\",\"poi_code1\":\"\",\"poi_code2\":\"\",\"poi_code3\":\"\",\"poi_html\":\"\",\"poi_imagedir\":\"\",\"icon\":\"\",\"category_name\":\"\",\"poi_dst\":\"11257133.0781643\"},{\"poi_seq\":\"358806\",\"poi_code\":\"30901\",\"poi_title\":\"KFC\",\"poi_title_latin\":null,\"poi_atrib_0\":null,\"poi_atrib_1\":null,\"poi_atrib_2\":null,\"poi_atrib_3\":null,\"poi_atrib_4\":null,\"poi_atrib_5\":null,\"poi_atrib_6\":null,\"poi_address\":null,\"poi_address2\":\"\\u0423\\u043b\\u0430\\u0430\\u043d\\u0431\\u0430\\u0430\\u0442\\u0430\\u0440 \\u0445\\u043e\\u0442 \\u0421\\u04af\\u0445\\u0431\\u0430\\u0430\\u0442\\u0430\\u0440 \\u0434\\u04af\\u04af\\u0440\\u044d\\u0433 1-\\u0440 \\u0445\\u043e\\u0440\\u043e\\u043e 5-\\u0440 \\u0445\\u043e\\u0440\\u043e\\u043e\\u043b\\u043e\\u043b-2\",\"poi_phone1\":null,\"poi_phone2\":null,\"poi_url\":null,\"poi_image\":null,\"poi_memo\":null,\"poi_lon\":\"106.9150\",\"poi_lat\":\"47.9141\",\"poi_code1_name\":\"\",\"poi_code2_name\":\"\",\"poi_code3_name\":\"\\u0422\\u04af\\u0440\\u0433\\u044d\\u043d \\u0445\\u043e\\u043e\\u043b\",\"poi_code1_icon\":\"\",\"poi_code2_icon\":\"\",\"poi_code3_icon\":\"\",\"poi_code1\":\"\",\"poi_code2\":\"\",\"poi_code3\":\"\",\"poi_html\":\"\",\"poi_imagedir\":\"\",\"icon\":\"\",\"category_name\":\"\",\"poi_dst\":\"11257975.4403524\"},{\"poi_seq\":\"358808\",\"poi_code\":\"30901\",\"poi_title\":\"KFC\",\"poi_title_latin\":null,\"poi_atrib_0\":null,\"poi_atrib_1\":null,\"poi_atrib_2\":null,\"poi_atrib_3\":null,\"poi_atrib_4\":null,\"poi_atrib_5\":null,\"poi_atrib_6\":null,\"poi_address\":null,\"poi_address2\":\"\\u0423\\u043b\\u0430\\u0430\\u043d\\u0431\\u0430\\u0430\\u0442\\u0430\\u0440 \\u0445\\u043e\\u0442 \\u0421\\u04af\\u0445\\u0431\\u0430\\u0430\\u0442\\u0430\\u0440 \\u0434\\u04af\\u04af\\u0440\\u044d\\u0433 8-\\u0440 \\u0445\\u043e\\u0440\\u043e\\u043e \\u0411\\u0430\\u0433\\u0430 \\u0442\\u043e\\u0439\\u0440\\u0443\\u0443-1\",\"poi_phone1\":null,\"poi_phone2\":null,\"poi_url\":null,\"poi_image\":null,\"poi_memo\":null,\"poi_lon\":\"106.9190\",\"poi_lat\":\"47.9210\",\"poi_code1_name\":\"\",\"poi_code2_name\":\"\",\"poi_code3_name\":\"\\u0422\\u04af\\u0440\\u0433\\u044d\\u043d \\u0445\\u043e\\u043e\\u043b\",\"poi_code1_icon\":\"\",\"poi_code2_icon\":\"\",\"poi_code3_icon\":\"\",\"poi_code1\":\"\",\"poi_code2\":\"\",\"poi_code3\":\"\",\"poi_html\":\"\",\"poi_imagedir\":\"\",\"icon\":\"\",\"category_name\":\"\",\"poi_dst\":\"11258097.2740369\"},{\"poi_seq\":\"358803\",\"poi_code\":\"30901\",\"poi_title\":\"KFC\",\"poi_title_latin\":null,\"poi_atrib_0\":null,\"poi_atrib_1\":null,\"poi_atrib_2\":null,\"poi_atrib_3\":null,\"poi_atrib_4\":null,\"poi_atrib_5\":null,\"poi_atrib_6\":null,\"poi_address\":null,\"poi_address2\":\"\\u0423\\u043b\\u0430\\u0430\\u043d\\u0431\\u0430\\u0430\\u0442\\u0430\\u0440 \\u0445\\u043e\\u0442 \\u0425\\u0430\\u043d \\u0423\\u0443\\u043b \\u0434\\u04af\\u04af\\u0440\\u044d\\u0433 11-\\u0440 \\u0445\\u043e\\u0440\\u043e\\u043e \\u0417\\u0430\\u0439\\u0441\\u0430\\u043d-4\",\"poi_phone1\":null,\"poi_phone2\":null,\"poi_url\":null,\"poi_image\":null,\"poi_memo\":null,\"poi_lon\":\"106.9129\",\"poi_lat\":\"47.8817\",\"poi_code1_name\":\"\",\"poi_code2_name\":\"\",\"poi_code3_name\":\"\\u0422\\u04af\\u0440\\u0433\\u044d\\u043d \\u0445\\u043e\\u043e\\u043b\",\"poi_code1_icon\":\"\",\"poi_code2_icon\":\"\",\"poi_code3_icon\":\"\",\"poi_code1\":\"\",\"poi_code2\":\"\",\"poi_code3\":\"\",\"poi_html\":\"\",\"poi_imagedir\":\"\",\"icon\":\"\",\"category_name\":\"\",\"poi_dst\":\"11258615.6344274\"},{\"poi_seq\":\"358804\",\"poi_code\":\"30901\",\"poi_title\":\"KFC\",\"poi_title_latin\":\"KFC\",\"poi_atrib_0\":null,\"poi_atrib_1\":null,\"poi_atrib_2\":null,\"poi_atrib_3\":null,\"poi_atrib_4\":null,\"poi_atrib_5\":null,\"poi_atrib_6\":null,\"poi_address\":null,\"poi_address2\":\"\\u0423\\u043b\\u0430\\u0430\\u043d\\u0431\\u0430\\u0430\\u0442\\u0430\\u0440 \\u0445\\u043e\\u0442 \\u0425\\u0430\\u043d \\u0423\\u0443\\u043b \\u0434\\u04af\\u04af\\u0440\\u044d\\u0433 15-\\u0440 \\u0445\\u043e\\u0440\\u043e\\u043e \\u0421\\u0442\\u0430\\u0434\\u0438\\u043e\\u043d \\u041e\\u0440\\u0433\\u0438\\u043b-2\",\"poi_phone1\":null,\"poi_phone2\":null,\"poi_url\":null,\"poi_image\":null,\"poi_memo\":null,\"poi_lon\":\"106.9280\",\"poi_lat\":\"47.9027\",\"poi_code1_name\":\"\",\"poi_code2_name\":\"\",\"poi_code3_name\":\"\\u0422\\u04af\\u0440\\u0433\\u044d\\u043d \\u0445\\u043e\\u043e\\u043b\",\"poi_code1_icon\":\"\",\"poi_code2_icon\":\"\",\"poi_code3_icon\":\"\",\"poi_code1\":\"\",\"poi_code2\":\"\",\"poi_code3\":\"\",\"poi_html\":\"\",\"poi_imagedir\":\"\",\"icon\":\"\",\"category_name\":\"\",\"poi_dst\":\"11259199.7782217\"},{\"poi_seq\":\"358811\",\"poi_code\":\"30901\",\"poi_title\":\"KFC\",\"poi_title_latin\":null,\"poi_atrib_0\":null,\"poi_atrib_1\":null,\"poi_atrib_2\":null,\"poi_atrib_3\":null,\"poi_atrib_4\":null,\"poi_atrib_5\":null,\"poi_atrib_6\":null,\"poi_address\":null,\"poi_address2\":\"\\u0423\\u043b\\u0430\\u0430\\u043d\\u0431\\u0430\\u0430\\u0442\\u0430\\u0440 \\u0445\\u043e\\u0442 \\u0411\\u0430\\u044f\\u043d\\u0437\\u04af\\u0440\\u0445 \\u0434\\u04af\\u04af\\u0440\\u044d\\u0433 1-\\u0440 \\u0445\\u043e\\u0440\\u043e\\u043e 12-\\u0440 \\u0445\\u043e\\u0440\\u043e\\u043e\\u043b\\u043e\\u043b-1\",\"poi_phone1\":null,\"poi_phone2\":null,\"poi_url\":null,\"poi_image\":null,\"poi_memo\":null,\"poi_lon\":\"106.9381\",\"poi_lat\":\"47.9279\",\"poi_code1_name\":\"\",\"poi_code2_name\":\"\",\"poi_code3_name\":\"\\u0422\\u04af\\u0440\\u0433\\u044d\\u043d \\u0445\\u043e\\u043e\\u043b\",\"poi_code1_icon\":\"\",\"poi_code2_icon\":\"\",\"poi_code3_icon\":\"\",\"poi_code1\":\"\",\"poi_code2\":\"\",\"poi_code3\":\"\",\"poi_html\":\"\",\"poi_imagedir\":\"\",\"icon\":\"\",\"category_name\":\"\",\"poi_dst\":\"11259316.4091716\"},{\"poi_seq\":\"358807\",\"poi_code\":\"30901\",\"poi_title\":\"KFC\",\"poi_title_latin\":null,\"poi_atrib_0\":null,\"poi_atrib_1\":null,\"poi_atrib_2\":null,\"poi_atrib_3\":null,\"poi_atrib_4\":null,\"poi_atrib_5\":null,\"poi_atrib_6\":null,\"poi_address\":null,\"poi_address2\":\"\\u0423\\u043b\\u0430\\u0430\\u043d\\u0431\\u0430\\u0430\\u0442\\u0430\\u0440 \\u0445\\u043e\\u0442 \\u0411\\u0430\\u044f\\u043d\\u0437\\u04af\\u0440\\u0445 \\u0434\\u04af\\u04af\\u0440\\u044d\\u0433 14-\\u0440 \\u0445\\u043e\\u0440\\u043e\\u043e 14-\\u0440 \\u0445\\u043e\\u0440\\u043e\\u043e\\u043b\\u043e\\u043b-6\",\"poi_phone1\":null,\"poi_phone2\":null,\"poi_url\":null,\"poi_image\":null,\"poi_memo\":null,\"poi_lon\":\"106.9443\",\"poi_lat\":\"47.9145\",\"poi_code1_name\":\"\",\"poi_code2_name\":\"\",\"poi_code3_name\":\"\\u0422\\u04af\\u0440\\u0433\\u044d\\u043d \\u0445\\u043e\\u043e\\u043b\",\"poi_code1_icon\":\"\",\"poi_code2_icon\":\"\",\"poi_code3_icon\":\"\",\"poi_code1\":\"\",\"poi_code2\":\"\",\"poi_code3\":\"\",\"poi_html\":\"\",\"poi_imagedir\":\"\",\"icon\":\"\",\"category_name\":\"\",\"poi_dst\":\"11260095.6256488\"}],\"t_region_data\":[{\"seq\":\"19696\",\"type\":\"10\",\"lon\":\"106.880443717662899\",\"lat\":\"47.914928975819990\",\"pref_city\":\"\\u0423\\u043b\\u0430\\u0430\\u043d\\u0431\\u0430\\u0430\\u0442\\u0430\\u0440 \\u0445\\u043e\\u0442\",\"horoo_bag\":\"2-\\u0440 \\u0445\\u043e\\u0440\\u043e\\u043e\",\"sum\":\"\\u0411\\u0430\\u044f\\u043d\\u0433\\u043e\\u043b \\u0434\\u04af\\u04af\\u0440\\u044d\\u0433\",\"street\":\"2-\\u0440 \\u0445\\u043e\\u0440\\u043e\\u043e\\u043b\\u043e\\u043b\",\"number\":\"61\\/1\",\"build_name\":\"KFC PIZZA HUT\",\"floors\":\"3\",\"zipcode\":\"16050\",\"area\":\"0.0000000880765040147391\",\"dst\":\"11255422.800564\"},{\"seq\":\"23294\",\"type\":\"10\",\"lon\":\"106.938117544048310\",\"lat\":\"47.927905568264109\",\"pref_city\":\"\\u0423\\u043b\\u0430\\u0430\\u043d\\u0431\\u0430\\u0430\\u0442\\u0430\\u0440 \\u0445\\u043e\\u0442\",\"horoo_bag\":\"1-\\u0440 \\u0445\\u043e\\u0440\\u043e\\u043e\",\"sum\":\"\\u0411\\u0430\\u044f\\u043d\\u0437\\u04af\\u0440\\u0445 \\u0434\\u04af\\u04af\\u0440\\u044d\\u0433\",\"street\":\"12-\\u0440 \\u0445\\u043e\\u0440\\u043e\\u043e\\u043b\\u043e\\u043b\",\"number\":\"61\",\"build_name\":\"KFC-\\u0421\\u0430\\u043d\\u0441\\u0430\\u0440 \\u0442\\u04e9\\u0432\",\"floors\":\"15\",\"zipcode\":\"13380\",\"area\":\"0.0000000449899461783504\",\"dst\":\"11259307.6656196\"}],\"stat\":1,\"info\":\"\"}"
+										}
+									]
+								},
+								{
+									"name": "By Name - 02",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "LLX",
+													"value": "106.91357016563416",
+													"description": "Талбайн зүүн доод цэгийн уртраг ",
+													"type": "text"
+												},
+												{
+													"key": "LLY",
+													"value": "47.9167303325335",
+													"description": "Талбайн зүүн доод цэгийн өргөрөг ",
+													"type": "text"
+												},
+												{
+													"key": "URX",
+													"value": "106.92206740379335",
+													"description": "Талбайн баруун дээд цэгийн уртраг ",
+													"type": "text"
+												},
+												{
+													"key": "URY",
+													"value": "47.92074251641901",
+													"description": "Талбайн баруун доод цэгийн өргөрөг ",
+													"type": "text"
+												},
+												{
+													"key": "NAME",
+													"value": "kfc",
+													"description": "Хайх хаяг",
+													"type": "text"
+												},
+												{
+													"key": "CODE",
+													"value": "000000000000",
+													"description": "000000000000",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "{{nomad_url}}map02/poi2/searchPoaName2sOpt?ssid={{nomad_ssid}}",
+											"host": [
+												"{{nomad_url}}map02"
+											],
+											"path": [
+												"poi2",
+												"searchPoaName2sOpt"
+											],
+											"query": [
+												{
+													"key": "ssid",
+													"value": "{{nomad_ssid}}"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "By Point",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "X",
+													"value": "106.90731762364895",
+													"description": "Уртраг",
+													"type": "text"
+												},
+												{
+													"key": "Y",
+													"value": "47.920695851152715",
+													"description": "Өргөрөг",
+													"type": "text"
+												},
+												{
+													"key": "RANGE",
+													"value": "163840.0",
+													"type": "text",
+													"disabled": true
+												}
+											]
+										},
+										"url": {
+											"raw": "{{nomad_url}}map/v1/poi/searchPoaXY?ssid={{nomad_ssid}}",
+											"host": [
+												"{{nomad_url}}map"
+											],
+											"path": [
+												"v1",
+												"poi",
+												"searchPoaXY"
+											],
+											"query": [
+												{
+													"key": "ssid",
+													"value": "{{nomad_ssid}}"
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "By Name - KFC",
+											"originalRequest": {
+												"method": "POST",
+												"header": [],
+												"body": {
+													"mode": "formdata",
+													"formdata": [
+														{
+															"key": "LLX",
+															"value": "106.91357016563416",
+															"description": "Талбайн зүүн доод цэгийн уртраг ",
+															"type": "text"
+														},
+														{
+															"key": "LLY",
+															"value": "47.9167303325335",
+															"description": "Талбайн зүүн доод цэгийн өргөрөг ",
+															"type": "text"
+														},
+														{
+															"key": "URX",
+															"value": "106.92206740379335",
+															"description": "Талбайн баруун дээд цэгийн уртраг ",
+															"type": "text"
+														},
+														{
+															"key": "URY",
+															"value": "47.92074251641901",
+															"description": "Талбайн баруун доод цэгийн өргөрөг ",
+															"type": "text"
+														},
+														{
+															"key": "NAME",
+															"value": "kfc",
+															"description": "Хайх хаяг",
+															"type": "text"
+														},
+														{
+															"key": "CODE",
+															"value": "000000000000",
+															"description": "000000000000",
+															"type": "text"
+														}
+													]
+												},
+												"url": {
+													"raw": "{{nomad_url}}map/v1/poi/searchPoaName2?ssid={{nomad_ssid}}",
+													"host": [
+														"{{nomad_url}}map"
+													],
+													"path": [
+														"v1",
+														"poi",
+														"searchPoaName2"
+													],
+													"query": [
+														{
+															"key": "ssid",
+															"value": "{{nomad_ssid}}"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "html",
+											"header": [
+												{
+													"key": "Date",
+													"value": "Fri, 08 Dec 2023 09:46:18 GMT"
+												},
+												{
+													"key": "Server",
+													"value": "Apache/2.4.41 (codeit) OpenSSL/1.1.1d PHP/7.3.10"
+												},
+												{
+													"key": "X-Powered-By",
+													"value": "PHP/7.3.10"
+												},
+												{
+													"key": "Expires",
+													"value": "Thu, 19 Nov 1981 08:52:00 GMT"
+												},
+												{
+													"key": "Cache-Control",
+													"value": "no-store, no-cache, must-revalidate"
+												},
+												{
+													"key": "Pragma",
+													"value": "no-cache"
+												},
+												{
+													"key": "Access-Control-Allow-Origin",
+													"value": "*"
+												},
+												{
+													"key": "Keep-Alive",
+													"value": "timeout=5, max=500"
+												},
+												{
+													"key": "Connection",
+													"value": "Keep-Alive"
+												},
+												{
+													"key": "Transfer-Encoding",
+													"value": "chunked"
+												},
+												{
+													"key": "Content-Type",
+													"value": "text/html; charset=UTF-8"
+												}
+											],
+											"cookie": [],
+											"body": "{\"t_poi_data\":[{\"poi_seq\":\"358805\",\"poi_code\":\"30901\",\"poi_title\":\"KFC\",\"poi_title_latin\":null,\"poi_atrib_0\":null,\"poi_atrib_1\":null,\"poi_atrib_2\":null,\"poi_atrib_3\":null,\"poi_atrib_4\":null,\"poi_atrib_5\":null,\"poi_atrib_6\":null,\"poi_address\":null,\"poi_address2\":\"\\u0423\\u043b\\u0430\\u0430\\u043d\\u0431\\u0430\\u0430\\u0442\\u0430\\u0440 \\u0445\\u043e\\u0442 \\u0421\\u043e\\u043d\\u0433\\u0438\\u043d\\u043e\\u0445\\u0430\\u0439\\u0440\\u0445\\u0430\\u043d \\u0434\\u04af\\u04af\\u0440\\u044d\\u0433 16-\\u0440 \\u0445\\u043e\\u0440\\u043e\\u043e 1-\\u0440 \\u0445\\u043e\\u0440\\u043e\\u043e\\u043b\\u043e\\u043b-3\",\"poi_phone1\":null,\"poi_phone2\":null,\"poi_url\":null,\"poi_image\":null,\"poi_memo\":null,\"poi_lon\":\"106.8366\",\"poi_lat\":\"47.9119\",\"poi_code1_name\":\"\",\"poi_code2_name\":\"\",\"poi_code3_name\":\"\\u0422\\u04af\\u0440\\u0433\\u044d\\u043d \\u0445\\u043e\\u043e\\u043b\",\"poi_code1_icon\":\"\",\"poi_code2_icon\":\"\",\"poi_code3_icon\":\"\",\"poi_code1\":\"\",\"poi_code2\":\"\",\"poi_code3\":\"\",\"poi_html\":\"\",\"poi_imagedir\":\"\",\"icon\":\"\",\"category_name\":\"\",\"poi_dst\":\"11252328.7411554\"},{\"poi_seq\":\"358810\",\"poi_code\":\"30901\",\"poi_title\":\"KFC\",\"poi_title_latin\":null,\"poi_atrib_0\":null,\"poi_atrib_1\":null,\"poi_atrib_2\":null,\"poi_atrib_3\":null,\"poi_atrib_4\":null,\"poi_atrib_5\":null,\"poi_atrib_6\":null,\"poi_address\":null,\"poi_address2\":\"\\u0423\\u043b\\u0430\\u0430\\u043d\\u0431\\u0430\\u0430\\u0442\\u0430\\u0440 \\u0445\\u043e\\u0442 \\u0411\\u0430\\u044f\\u043d\\u0433\\u043e\\u043b \\u0434\\u04af\\u04af\\u0440\\u044d\\u0433 19-\\u0440 \\u0445\\u043e\\u0440\\u043e\\u043e 4-\\u0440 \\u0445\\u043e\\u0440\\u043e\\u043e\\u043b\\u043e\\u043b-8\",\"poi_phone1\":null,\"poi_phone2\":null,\"poi_url\":null,\"poi_image\":null,\"poi_memo\":null,\"poi_lon\":\"106.8760\",\"poi_lat\":\"47.9222\",\"poi_code1_name\":\"\",\"poi_code2_name\":\"\",\"poi_code3_name\":\"\\u0422\\u04af\\u0440\\u0433\\u044d\\u043d \\u0445\\u043e\\u043e\\u043b\",\"poi_code1_icon\":\"\",\"poi_code2_icon\":\"\",\"poi_code3_icon\":\"\",\"poi_code1\":\"\",\"poi_code2\":\"\",\"poi_code3\":\"\",\"poi_html\":\"\",\"poi_imagedir\":\"\",\"icon\":\"\",\"category_name\":\"\",\"poi_dst\":\"11254942.1604706\"},{\"poi_seq\":\"358802\",\"poi_code\":\"30101\",\"poi_title\":\"KFC\",\"poi_title_latin\":null,\"poi_atrib_0\":null,\"poi_atrib_1\":null,\"poi_atrib_2\":null,\"poi_atrib_3\":null,\"poi_atrib_4\":null,\"poi_atrib_5\":null,\"poi_atrib_6\":null,\"poi_address\":null,\"poi_address2\":\"\\u0423\\u043b\\u0430\\u0430\\u043d\\u0431\\u0430\\u0430\\u0442\\u0430\\u0440 \\u0445\\u043e\\u0442 \\u0411\\u0430\\u044f\\u043d\\u0433\\u043e\\u043b \\u0434\\u04af\\u04af\\u0440\\u044d\\u0433 2-\\u0440 \\u0445\\u043e\\u0440\\u043e\\u043e 2-\\u0440 \\u0445\\u043e\\u0440\\u043e\\u043e\\u043b\\u043e\\u043b-1\",\"poi_phone1\":null,\"poi_phone2\":null,\"poi_url\":null,\"poi_image\":null,\"poi_memo\":null,\"poi_lon\":\"106.8804\",\"poi_lat\":\"47.9149\",\"poi_code1_name\":\"\",\"poi_code2_name\":\"\",\"poi_code3_name\":\"\\u0420\\u0435\\u0441\\u0442\\u043e\\u0440\\u0430\\u043d\",\"poi_code1_icon\":\"\",\"poi_code2_icon\":\"\",\"poi_code3_icon\":\"\",\"poi_code1\":\"\",\"poi_code2\":\"\",\"poi_code3\":\"\",\"poi_html\":\"\",\"poi_imagedir\":\"\",\"icon\":\"\",\"category_name\":\"\",\"poi_dst\":\"11255440.3687948\"},{\"poi_seq\":\"358809\",\"poi_code\":\"30901\",\"poi_title\":\"KFC\",\"poi_title_latin\":null,\"poi_atrib_0\":null,\"poi_atrib_1\":null,\"poi_atrib_2\":null,\"poi_atrib_3\":null,\"poi_atrib_4\":null,\"poi_atrib_5\":null,\"poi_atrib_6\":null,\"poi_address\":null,\"poi_address2\":\"\\u0423\\u043b\\u0430\\u0430\\u043d\\u0431\\u0430\\u0430\\u0442\\u0430\\u0440 \\u0445\\u043e\\u0442 \\u0427\\u0438\\u043d\\u0433\\u044d\\u043b\\u0442\\u044d\\u0439 \\u0434\\u04af\\u04af\\u0440\\u044d\\u0433 5-\\u0440 \\u0445\\u043e\\u0440\\u043e\\u043e 6-\\u0440 \\u0445\\u043e\\u0440\\u043e\\u043e\\u043b\\u043e\\u043b-2\",\"poi_phone1\":null,\"poi_phone2\":null,\"poi_url\":null,\"poi_image\":null,\"poi_memo\":null,\"poi_lon\":\"106.9042\",\"poi_lat\":\"47.9222\",\"poi_code1_name\":\"\",\"poi_code2_name\":\"\",\"poi_code3_name\":\"\\u0422\\u04af\\u0440\\u0433\\u044d\\u043d \\u0445\\u043e\\u043e\\u043b\",\"poi_code1_icon\":\"\",\"poi_code2_icon\":\"\",\"poi_code3_icon\":\"\",\"poi_code1\":\"\",\"poi_code2\":\"\",\"poi_code3\":\"\",\"poi_html\":\"\",\"poi_imagedir\":\"\",\"icon\":\"\",\"category_name\":\"\",\"poi_dst\":\"11256992.1020004\"},{\"poi_seq\":\"358801\",\"poi_code\":\"30101\",\"poi_title\":\"KFC\",\"poi_title_latin\":null,\"poi_atrib_0\":null,\"poi_atrib_1\":null,\"poi_atrib_2\":null,\"poi_atrib_3\":null,\"poi_atrib_4\":null,\"poi_atrib_5\":null,\"poi_atrib_6\":null,\"poi_address\":null,\"poi_address2\":\"\\u0423\\u043b\\u0430\\u0430\\u043d\\u0431\\u0430\\u0430\\u0442\\u0430\\u0440 \\u0445\\u043e\\u0442 \\u0421\\u04af\\u0445\\u0431\\u0430\\u0430\\u0442\\u0430\\u0440 \\u0434\\u04af\\u04af\\u0440\\u044d\\u0433 4-\\u0440 \\u0445\\u043e\\u0440\\u043e\\u043e 5-\\u0440 \\u0445\\u043e\\u0440\\u043e\\u043e\\u043b\\u043e\\u043b-1\",\"poi_phone1\":null,\"poi_phone2\":null,\"poi_url\":null,\"poi_image\":null,\"poi_memo\":null,\"poi_lon\":\"106.9015\",\"poi_lat\":\"47.9134\",\"poi_code1_name\":\"\",\"poi_code2_name\":\"\",\"poi_code3_name\":\"\\u0420\\u0435\\u0441\\u0442\\u043e\\u0440\\u0430\\u043d\",\"poi_code1_icon\":\"\",\"poi_code2_icon\":\"\",\"poi_code3_icon\":\"\",\"poi_code1\":\"\",\"poi_code2\":\"\",\"poi_code3\":\"\",\"poi_html\":\"\",\"poi_imagedir\":\"\",\"icon\":\"\",\"category_name\":\"\",\"poi_dst\":\"11257011.1019076\"},{\"poi_seq\":\"358812\",\"poi_code\":\"30901\",\"poi_title\":\"KFC \\u0425\\u0430\\u043d \\u0443\\u0443\\u043b \\u0441\\u0430\\u043b\\u0431\\u0430\\u0440\",\"poi_title_latin\":\"KFC Khan-Uul\",\"poi_atrib_0\":null,\"poi_atrib_1\":null,\"poi_atrib_2\":null,\"poi_atrib_3\":null,\"poi_atrib_4\":null,\"poi_atrib_5\":null,\"poi_atrib_6\":null,\"poi_address\":null,\"poi_address2\":\"\\u0423\\u043b\\u0430\\u0430\\u043d\\u0431\\u0430\\u0430\\u0442\\u0430\\u0440 \\u0445\\u043e\\u0442 \\u0425\\u0430\\u043d \\u0423\\u0443\\u043b \\u0434\\u04af\\u04af\\u0440\\u044d\\u0433 3-\\u0440 \\u0445\\u043e\\u0440\\u043e\\u043e \\u04ae\\u0439\\u043b\\u0434\\u0432\\u044d\\u0440 2-3\",\"poi_phone1\":null,\"poi_phone2\":null,\"poi_url\":null,\"poi_image\":null,\"poi_memo\":null,\"poi_lon\":\"106.8982\",\"poi_lat\":\"47.8986\",\"poi_code1_name\":\"\",\"poi_code2_name\":\"\",\"poi_code3_name\":\"\\u0422\\u04af\\u0440\\u0433\\u044d\\u043d \\u0445\\u043e\\u043e\\u043b\",\"poi_code1_icon\":\"\",\"poi_code2_icon\":\"\",\"poi_code3_icon\":\"\",\"poi_code1\":\"\",\"poi_code2\":\"\",\"poi_code3\":\"\",\"poi_html\":\"\",\"poi_imagedir\":\"\",\"icon\":\"\",\"category_name\":\"\",\"poi_dst\":\"11257133.0781643\"},{\"poi_seq\":\"358806\",\"poi_code\":\"30901\",\"poi_title\":\"KFC\",\"poi_title_latin\":null,\"poi_atrib_0\":null,\"poi_atrib_1\":null,\"poi_atrib_2\":null,\"poi_atrib_3\":null,\"poi_atrib_4\":null,\"poi_atrib_5\":null,\"poi_atrib_6\":null,\"poi_address\":null,\"poi_address2\":\"\\u0423\\u043b\\u0430\\u0430\\u043d\\u0431\\u0430\\u0430\\u0442\\u0430\\u0440 \\u0445\\u043e\\u0442 \\u0421\\u04af\\u0445\\u0431\\u0430\\u0430\\u0442\\u0430\\u0440 \\u0434\\u04af\\u04af\\u0440\\u044d\\u0433 1-\\u0440 \\u0445\\u043e\\u0440\\u043e\\u043e 5-\\u0440 \\u0445\\u043e\\u0440\\u043e\\u043e\\u043b\\u043e\\u043b-2\",\"poi_phone1\":null,\"poi_phone2\":null,\"poi_url\":null,\"poi_image\":null,\"poi_memo\":null,\"poi_lon\":\"106.9150\",\"poi_lat\":\"47.9141\",\"poi_code1_name\":\"\",\"poi_code2_name\":\"\",\"poi_code3_name\":\"\\u0422\\u04af\\u0440\\u0433\\u044d\\u043d \\u0445\\u043e\\u043e\\u043b\",\"poi_code1_icon\":\"\",\"poi_code2_icon\":\"\",\"poi_code3_icon\":\"\",\"poi_code1\":\"\",\"poi_code2\":\"\",\"poi_code3\":\"\",\"poi_html\":\"\",\"poi_imagedir\":\"\",\"icon\":\"\",\"category_name\":\"\",\"poi_dst\":\"11257975.4403524\"},{\"poi_seq\":\"358808\",\"poi_code\":\"30901\",\"poi_title\":\"KFC\",\"poi_title_latin\":null,\"poi_atrib_0\":null,\"poi_atrib_1\":null,\"poi_atrib_2\":null,\"poi_atrib_3\":null,\"poi_atrib_4\":null,\"poi_atrib_5\":null,\"poi_atrib_6\":null,\"poi_address\":null,\"poi_address2\":\"\\u0423\\u043b\\u0430\\u0430\\u043d\\u0431\\u0430\\u0430\\u0442\\u0430\\u0440 \\u0445\\u043e\\u0442 \\u0421\\u04af\\u0445\\u0431\\u0430\\u0430\\u0442\\u0430\\u0440 \\u0434\\u04af\\u04af\\u0440\\u044d\\u0433 8-\\u0440 \\u0445\\u043e\\u0440\\u043e\\u043e \\u0411\\u0430\\u0433\\u0430 \\u0442\\u043e\\u0439\\u0440\\u0443\\u0443-1\",\"poi_phone1\":null,\"poi_phone2\":null,\"poi_url\":null,\"poi_image\":null,\"poi_memo\":null,\"poi_lon\":\"106.9190\",\"poi_lat\":\"47.9210\",\"poi_code1_name\":\"\",\"poi_code2_name\":\"\",\"poi_code3_name\":\"\\u0422\\u04af\\u0440\\u0433\\u044d\\u043d \\u0445\\u043e\\u043e\\u043b\",\"poi_code1_icon\":\"\",\"poi_code2_icon\":\"\",\"poi_code3_icon\":\"\",\"poi_code1\":\"\",\"poi_code2\":\"\",\"poi_code3\":\"\",\"poi_html\":\"\",\"poi_imagedir\":\"\",\"icon\":\"\",\"category_name\":\"\",\"poi_dst\":\"11258097.2740369\"},{\"poi_seq\":\"358803\",\"poi_code\":\"30901\",\"poi_title\":\"KFC\",\"poi_title_latin\":null,\"poi_atrib_0\":null,\"poi_atrib_1\":null,\"poi_atrib_2\":null,\"poi_atrib_3\":null,\"poi_atrib_4\":null,\"poi_atrib_5\":null,\"poi_atrib_6\":null,\"poi_address\":null,\"poi_address2\":\"\\u0423\\u043b\\u0430\\u0430\\u043d\\u0431\\u0430\\u0430\\u0442\\u0430\\u0440 \\u0445\\u043e\\u0442 \\u0425\\u0430\\u043d \\u0423\\u0443\\u043b \\u0434\\u04af\\u04af\\u0440\\u044d\\u0433 11-\\u0440 \\u0445\\u043e\\u0440\\u043e\\u043e \\u0417\\u0430\\u0439\\u0441\\u0430\\u043d-4\",\"poi_phone1\":null,\"poi_phone2\":null,\"poi_url\":null,\"poi_image\":null,\"poi_memo\":null,\"poi_lon\":\"106.9129\",\"poi_lat\":\"47.8817\",\"poi_code1_name\":\"\",\"poi_code2_name\":\"\",\"poi_code3_name\":\"\\u0422\\u04af\\u0440\\u0433\\u044d\\u043d \\u0445\\u043e\\u043e\\u043b\",\"poi_code1_icon\":\"\",\"poi_code2_icon\":\"\",\"poi_code3_icon\":\"\",\"poi_code1\":\"\",\"poi_code2\":\"\",\"poi_code3\":\"\",\"poi_html\":\"\",\"poi_imagedir\":\"\",\"icon\":\"\",\"category_name\":\"\",\"poi_dst\":\"11258615.6344274\"},{\"poi_seq\":\"358804\",\"poi_code\":\"30901\",\"poi_title\":\"KFC\",\"poi_title_latin\":\"KFC\",\"poi_atrib_0\":null,\"poi_atrib_1\":null,\"poi_atrib_2\":null,\"poi_atrib_3\":null,\"poi_atrib_4\":null,\"poi_atrib_5\":null,\"poi_atrib_6\":null,\"poi_address\":null,\"poi_address2\":\"\\u0423\\u043b\\u0430\\u0430\\u043d\\u0431\\u0430\\u0430\\u0442\\u0430\\u0440 \\u0445\\u043e\\u0442 \\u0425\\u0430\\u043d \\u0423\\u0443\\u043b \\u0434\\u04af\\u04af\\u0440\\u044d\\u0433 15-\\u0440 \\u0445\\u043e\\u0440\\u043e\\u043e \\u0421\\u0442\\u0430\\u0434\\u0438\\u043e\\u043d \\u041e\\u0440\\u0433\\u0438\\u043b-2\",\"poi_phone1\":null,\"poi_phone2\":null,\"poi_url\":null,\"poi_image\":null,\"poi_memo\":null,\"poi_lon\":\"106.9280\",\"poi_lat\":\"47.9027\",\"poi_code1_name\":\"\",\"poi_code2_name\":\"\",\"poi_code3_name\":\"\\u0422\\u04af\\u0440\\u0433\\u044d\\u043d \\u0445\\u043e\\u043e\\u043b\",\"poi_code1_icon\":\"\",\"poi_code2_icon\":\"\",\"poi_code3_icon\":\"\",\"poi_code1\":\"\",\"poi_code2\":\"\",\"poi_code3\":\"\",\"poi_html\":\"\",\"poi_imagedir\":\"\",\"icon\":\"\",\"category_name\":\"\",\"poi_dst\":\"11259199.7782217\"},{\"poi_seq\":\"358811\",\"poi_code\":\"30901\",\"poi_title\":\"KFC\",\"poi_title_latin\":null,\"poi_atrib_0\":null,\"poi_atrib_1\":null,\"poi_atrib_2\":null,\"poi_atrib_3\":null,\"poi_atrib_4\":null,\"poi_atrib_5\":null,\"poi_atrib_6\":null,\"poi_address\":null,\"poi_address2\":\"\\u0423\\u043b\\u0430\\u0430\\u043d\\u0431\\u0430\\u0430\\u0442\\u0430\\u0440 \\u0445\\u043e\\u0442 \\u0411\\u0430\\u044f\\u043d\\u0437\\u04af\\u0440\\u0445 \\u0434\\u04af\\u04af\\u0440\\u044d\\u0433 1-\\u0440 \\u0445\\u043e\\u0440\\u043e\\u043e 12-\\u0440 \\u0445\\u043e\\u0440\\u043e\\u043e\\u043b\\u043e\\u043b-1\",\"poi_phone1\":null,\"poi_phone2\":null,\"poi_url\":null,\"poi_image\":null,\"poi_memo\":null,\"poi_lon\":\"106.9381\",\"poi_lat\":\"47.9279\",\"poi_code1_name\":\"\",\"poi_code2_name\":\"\",\"poi_code3_name\":\"\\u0422\\u04af\\u0440\\u0433\\u044d\\u043d \\u0445\\u043e\\u043e\\u043b\",\"poi_code1_icon\":\"\",\"poi_code2_icon\":\"\",\"poi_code3_icon\":\"\",\"poi_code1\":\"\",\"poi_code2\":\"\",\"poi_code3\":\"\",\"poi_html\":\"\",\"poi_imagedir\":\"\",\"icon\":\"\",\"category_name\":\"\",\"poi_dst\":\"11259316.4091716\"},{\"poi_seq\":\"358807\",\"poi_code\":\"30901\",\"poi_title\":\"KFC\",\"poi_title_latin\":null,\"poi_atrib_0\":null,\"poi_atrib_1\":null,\"poi_atrib_2\":null,\"poi_atrib_3\":null,\"poi_atrib_4\":null,\"poi_atrib_5\":null,\"poi_atrib_6\":null,\"poi_address\":null,\"poi_address2\":\"\\u0423\\u043b\\u0430\\u0430\\u043d\\u0431\\u0430\\u0430\\u0442\\u0430\\u0440 \\u0445\\u043e\\u0442 \\u0411\\u0430\\u044f\\u043d\\u0437\\u04af\\u0440\\u0445 \\u0434\\u04af\\u04af\\u0440\\u044d\\u0433 14-\\u0440 \\u0445\\u043e\\u0440\\u043e\\u043e 14-\\u0440 \\u0445\\u043e\\u0440\\u043e\\u043e\\u043b\\u043e\\u043b-6\",\"poi_phone1\":null,\"poi_phone2\":null,\"poi_url\":null,\"poi_image\":null,\"poi_memo\":null,\"poi_lon\":\"106.9443\",\"poi_lat\":\"47.9145\",\"poi_code1_name\":\"\",\"poi_code2_name\":\"\",\"poi_code3_name\":\"\\u0422\\u04af\\u0440\\u0433\\u044d\\u043d \\u0445\\u043e\\u043e\\u043b\",\"poi_code1_icon\":\"\",\"poi_code2_icon\":\"\",\"poi_code3_icon\":\"\",\"poi_code1\":\"\",\"poi_code2\":\"\",\"poi_code3\":\"\",\"poi_html\":\"\",\"poi_imagedir\":\"\",\"icon\":\"\",\"category_name\":\"\",\"poi_dst\":\"11260095.6256488\"}],\"t_region_data\":[{\"seq\":\"19696\",\"type\":\"10\",\"lon\":\"106.880443717662899\",\"lat\":\"47.914928975819990\",\"pref_city\":\"\\u0423\\u043b\\u0430\\u0430\\u043d\\u0431\\u0430\\u0430\\u0442\\u0430\\u0440 \\u0445\\u043e\\u0442\",\"horoo_bag\":\"2-\\u0440 \\u0445\\u043e\\u0440\\u043e\\u043e\",\"sum\":\"\\u0411\\u0430\\u044f\\u043d\\u0433\\u043e\\u043b \\u0434\\u04af\\u04af\\u0440\\u044d\\u0433\",\"street\":\"2-\\u0440 \\u0445\\u043e\\u0440\\u043e\\u043e\\u043b\\u043e\\u043b\",\"number\":\"61\\/1\",\"build_name\":\"KFC PIZZA HUT\",\"floors\":\"3\",\"zipcode\":\"16050\",\"area\":\"0.0000000880765040147391\",\"dst\":\"11255422.800564\"},{\"seq\":\"23294\",\"type\":\"10\",\"lon\":\"106.938117544048310\",\"lat\":\"47.927905568264109\",\"pref_city\":\"\\u0423\\u043b\\u0430\\u0430\\u043d\\u0431\\u0430\\u0430\\u0442\\u0430\\u0440 \\u0445\\u043e\\u0442\",\"horoo_bag\":\"1-\\u0440 \\u0445\\u043e\\u0440\\u043e\\u043e\",\"sum\":\"\\u0411\\u0430\\u044f\\u043d\\u0437\\u04af\\u0440\\u0445 \\u0434\\u04af\\u04af\\u0440\\u044d\\u0433\",\"street\":\"12-\\u0440 \\u0445\\u043e\\u0440\\u043e\\u043e\\u043b\\u043e\\u043b\",\"number\":\"61\",\"build_name\":\"KFC-\\u0421\\u0430\\u043d\\u0441\\u0430\\u0440 \\u0442\\u04e9\\u0432\",\"floors\":\"15\",\"zipcode\":\"13380\",\"area\":\"0.0000000449899461783504\",\"dst\":\"11259307.6656196\"}],\"stat\":1,\"info\":\"\"}"
+										}
+									]
+								},
+								{
+									"name": "By ID",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "ID",
+													"value": "363681",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "{{nomad_url}}map/v1/poi/searchPoaById?ssid={{nomad_ssid}}",
+											"host": [
+												"{{nomad_url}}map"
+											],
+											"path": [
+												"v1",
+												"poi",
+												"searchPoaById"
+											],
+											"query": [
+												{
+													"key": "ssid",
+													"value": "{{nomad_ssid}}"
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "By ID - POI",
+											"originalRequest": {
+												"method": "POST",
+												"header": [],
+												"body": {
+													"mode": "formdata",
+													"formdata": [
+														{
+															"key": "ID",
+															"value": "364622",
+															"type": "text"
+														}
+													]
+												},
+												"url": {
+													"raw": "{{nomad_url}}map/v1/poi/searchPoaById?ssid={{nomad_ssid}}",
+													"host": [
+														"{{nomad_url}}map"
+													],
+													"path": [
+														"v1",
+														"poi",
+														"searchPoaById"
+													],
+													"query": [
+														{
+															"key": "ssid",
+															"value": "{{nomad_ssid}}"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Date",
+													"value": "Mon, 11 Dec 2023 08:02:08 GMT"
+												},
+												{
+													"key": "Server",
+													"value": "Apache/2.4.41 (codeit) OpenSSL/1.1.1d PHP/7.3.10"
+												},
+												{
+													"key": "X-Powered-By",
+													"value": "PHP/7.3.10"
+												},
+												{
+													"key": "Expires",
+													"value": "Thu, 19 Nov 1981 08:52:00 GMT"
+												},
+												{
+													"key": "Cache-Control",
+													"value": "no-store, no-cache, must-revalidate"
+												},
+												{
+													"key": "Pragma",
+													"value": "no-cache"
+												},
+												{
+													"key": "Access-Control-Allow-Origin",
+													"value": "*"
+												},
+												{
+													"key": "Content-Length",
+													"value": "1016"
+												},
+												{
+													"key": "Keep-Alive",
+													"value": "timeout=5, max=500"
+												},
+												{
+													"key": "Connection",
+													"value": "Keep-Alive"
+												},
+												{
+													"key": "Content-Type",
+													"value": "application/json",
+													"name": "Content-Type",
+													"description": "",
+													"type": "text"
+												}
+											],
+											"cookie": [],
+											"body": "{\n    \"t_poi_data\": {\n        \"poi_seq\": \"364622\",\n        \"poi_code\": \"110101\",\n        \"poi_title\": \"Потаны мөсөн гол\",\n        \"poi_title_latin\": null,\n        \"poi_atrib_0\": null,\n        \"poi_atrib_1\": null,\n        \"poi_atrib_2\": null,\n        \"poi_atrib_3\": null,\n        \"poi_atrib_4\": null,\n        \"poi_atrib_5\": null,\n        \"poi_atrib_6\": null,\n        \"poi_address\": null,\n        \"poi_address2\": \"Баян Өлгий аймаг Улаанхус сум\",\n        \"poi_phone1\": null,\n        \"poi_phone2\": null,\n        \"poi_url\": null,\n        \"poi_image\": null,\n        \"poi_memo\": null,\n        \"poi_lon\": \"87.9177\",\n        \"poi_lat\": \"49.1484\",\n        \"poi_code1_name\": \"\",\n        \"poi_code2_name\": \"\",\n        \"poi_code3_name\": \"Байгалын үзэсгэлэнт газар\",\n        \"poi_code1_icon\": \"\",\n        \"poi_code2_icon\": \"\",\n        \"poi_code3_icon\": \"\",\n        \"poi_code1\": \"11\",\n        \"poi_code2\": \"1\",\n        \"poi_code3\": \"1\",\n        \"poi_html\": \"\",\n        \"poi_imagedir\": \"\",\n        \"icon\": \"\",\n        \"category_name\": \"\"\n    },\n    \"stat\": 1,\n    \"info\": \"\"\n}"
+										},
+										{
+											"name": "By ID - No Mark",
+											"originalRequest": {
+												"method": "POST",
+												"header": [],
+												"body": {
+													"mode": "formdata",
+													"formdata": [
+														{
+															"key": "ID",
+															"value": "144493",
+															"type": "text"
+														}
+													]
+												},
+												"url": {
+													"raw": "{{nomad_url}}map/v1/poi/searchPoaById?ssid={{nomad_ssid}}",
+													"host": [
+														"{{nomad_url}}map"
+													],
+													"path": [
+														"v1",
+														"poi",
+														"searchPoaById"
+													],
+													"query": [
+														{
+															"key": "ssid",
+															"value": "{{nomad_ssid}}"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Date",
+													"value": "Mon, 11 Dec 2023 08:03:30 GMT"
+												},
+												{
+													"key": "Server",
+													"value": "Apache/2.4.41 (codeit) OpenSSL/1.1.1d PHP/7.3.10"
+												},
+												{
+													"key": "X-Powered-By",
+													"value": "PHP/7.3.10"
+												},
+												{
+													"key": "Expires",
+													"value": "Thu, 19 Nov 1981 08:52:00 GMT"
+												},
+												{
+													"key": "Cache-Control",
+													"value": "no-store, no-cache, must-revalidate"
+												},
+												{
+													"key": "Pragma",
+													"value": "no-cache"
+												},
+												{
+													"key": "Access-Control-Allow-Origin",
+													"value": "*"
+												},
+												{
+													"key": "Content-Length",
+													"value": "730"
+												},
+												{
+													"key": "Keep-Alive",
+													"value": "timeout=5, max=500"
+												},
+												{
+													"key": "Connection",
+													"value": "Keep-Alive"
+												},
+												{
+													"key": "Content-Type",
+													"value": "application/json",
+													"name": "Content-Type",
+													"description": "",
+													"type": "text"
+												}
+											],
+											"cookie": [],
+											"body": "{\n    \"t_poi_nomark_data\": {\n        \"seq\": \"144493\",\n        \"name\": \"кэй эф си хархорин зах салбар\",\n        \"type\": \"Нэршил\",\n        \"address\": \"1-р хороолол\",\n        \"lon\": \"106.837406\",\n        \"lat\": \"47.911826\",\n        \"dst\": 0\n    },\n    \"t_region_data\": {\n        \"seq\": \"144493\",\n        \"name\": \"кэй эф си хархорин зах салбар\",\n        \"type\": \"Нэршил\",\n        \"address\": \"1-р хороолол\",\n        \"lon\": \"106.837406\",\n        \"lat\": \"47.911826\",\n        \"dst\": 0\n    },\n    \"stat\": 1,\n    \"info\": \"\"\n}"
+										},
+										{
+											"name": "By ID - Region",
+											"originalRequest": {
+												"method": "POST",
+												"header": [],
+												"body": {
+													"mode": "formdata",
+													"formdata": [
+														{
+															"key": "ID",
+															"value": "279798",
+															"type": "text"
+														}
+													]
+												},
+												"url": {
+													"raw": "{{nomad_url}}map/v1/poi/searchPoaById?ssid={{nomad_ssid}}",
+													"host": [
+														"{{nomad_url}}map"
+													],
+													"path": [
+														"v1",
+														"poi",
+														"searchPoaById"
+													],
+													"query": [
+														{
+															"key": "ssid",
+															"value": "{{nomad_ssid}}"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Date",
+													"value": "Mon, 11 Dec 2023 08:04:55 GMT"
+												},
+												{
+													"key": "Server",
+													"value": "Apache/2.4.41 (codeit) OpenSSL/1.1.1d PHP/7.3.10"
+												},
+												{
+													"key": "X-Powered-By",
+													"value": "PHP/7.3.10"
+												},
+												{
+													"key": "Expires",
+													"value": "Thu, 19 Nov 1981 08:52:00 GMT"
+												},
+												{
+													"key": "Cache-Control",
+													"value": "no-store, no-cache, must-revalidate"
+												},
+												{
+													"key": "Pragma",
+													"value": "no-cache"
+												},
+												{
+													"key": "Access-Control-Allow-Origin",
+													"value": "*"
+												},
+												{
+													"key": "Content-Length",
+													"value": "29"
+												},
+												{
+													"key": "Keep-Alive",
+													"value": "timeout=5, max=500"
+												},
+												{
+													"key": "Connection",
+													"value": "Keep-Alive"
+												},
+												{
+													"key": "Content-Type",
+													"value": "application/json",
+													"name": "Content-Type",
+													"description": "",
+													"type": "text"
+												}
+											],
+											"cookie": [],
+											"body": "{\n    \"stat\": 0,\n    \"info\": \"not found\"\n}"
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Traffic",
+					"item": [
+						{
+							"name": "Traffic Camera",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://adm.ubtraffic.mn/public/cameraJson",
+									"protocol": "https",
+									"host": [
+										"adm",
+										"ubtraffic",
+										"mn"
+									],
+									"path": [
+										"public",
+										"cameraJson"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Search POI",
+					"item": [
+						{
+							"name": "Search POI By View Box",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "LLX",
+											"value": "106.87995278424427",
+											"description": "Талбайн зүүн доод цэгийн уртраг ",
+											"type": "text"
+										},
+										{
+											"key": "LLY",
+											"value": "47.89344904440867",
+											"description": "Талбайн зүүн доод цэгийн өргөрөг ",
+											"type": "text"
+										},
+										{
+											"key": "URX",
+											"value": "106.95805871075754",
+											"description": "Талбайн баруун дээд цэгийн уртраг ",
+											"type": "text"
+										},
+										{
+											"key": "URY",
+											"value": "47.944126178610674",
+											"description": "Талбайн баруун доод цэгийн өргөрөг ",
+											"type": "text"
+										},
+										{
+											"key": "ZOOM",
+											"value": "13",
+											"description": "Zoom Level",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{nomad_url}}map02/poi2/search2",
+									"host": [
+										"{{nomad_url}}map02"
+									],
+									"path": [
+										"poi2",
+										"search2"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Search POI By Name",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "NAME",
+											"value": "KFC",
+											"description": "Нэр",
+											"type": "text"
+										},
+										{
+											"key": "LIMIT",
+											"value": "15",
+											"description": "Хязгаар",
+											"type": "text"
+										},
+										{
+											"key": "CPY",
+											"value": "47.91879381643156",
+											"type": "text"
+										},
+										{
+											"key": "CPX",
+											"value": "106.9190057475007",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{nomad_url}}map02/poi2/searchPoaName2sOpt",
+									"host": [
+										"{{nomad_url}}map02"
+									],
+									"path": [
+										"poi2",
+										"searchPoaName2sOpt"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Search POI By Category Code",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "LLX",
+											"value": "106.91357016563416",
+											"description": "Талбайн зүүн доод цэгийн уртраг ",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "LLY",
+											"value": "47.9167303325335",
+											"description": "Талбайн зүүн доод цэгийн өргөрөг ",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "URX",
+											"value": "106.92206740379335",
+											"description": "Талбайн баруун дээд цэгийн уртраг ",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "URY",
+											"value": "47.92074251641901",
+											"description": "Талбайн баруун доод цэгийн өргөрөг ",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "ZOOM",
+											"value": "13",
+											"description": "Zoom Level",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "CATEGORY_CODE",
+											"value": "3",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{nomad_url}}map/v1/poi/searchPoaByCategory?ssid={{nomad_ssid}}",
+									"host": [
+										"{{nomad_url}}map"
+									],
+									"path": [
+										"v1",
+										"poi",
+										"searchPoaByCategory"
+									],
+									"query": [
+										{
+											"key": "ssid",
+											"value": "{{nomad_ssid}}"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Search POI By ID",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "ID",
+											"value": "358438",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{nomad_url}}map/v1/poi/searchPoaById?ssid={{nomad_ssid}}",
+									"host": [
+										"{{nomad_url}}map"
+									],
+									"path": [
+										"v1",
+										"poi",
+										"searchPoaById"
+									],
+									"query": [
+										{
+											"key": "ssid",
+											"value": "{{nomad_ssid}}"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Search Suggestion - itrack - search - хэрэглэгчийн гараас бичсэн утгыг хайх",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "key",
+											"value": "kfc",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{imap_pt_base_url_old}}search",
+									"host": [
+										"{{imap_pt_base_url_old}}search"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Seach POI By Point",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "X",
+											"value": "106.892581965391",
+											"description": "Long",
+											"type": "text"
+										},
+										{
+											"key": "Y",
+											"value": "47.92141101423684",
+											"description": "Lat",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{nomad_url}}map/v1/poi/searchPoaXY?ssid={{nomad_ssid}}",
+									"host": [
+										"{{nomad_url}}map"
+									],
+									"path": [
+										"v1",
+										"poi",
+										"searchPoaXY"
+									],
+									"query": [
+										{
+											"key": "ssid",
+											"value": "{{nomad_ssid}}"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Routing",
+					"item": [
+						{
+							"name": "Default",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"costing\": \"auto\", // auto||pedestrian\n    \"locations\": [\n        {\n            \"lat\": 47.92973335876596,\n            \"lon\": 106.92806266658766,\n            \"name\": \"7-р хороо Сүхбаатар дүүрэг Улаанбаатар хот\"\n        },\n        {\n            \"lat\": 47.928164995272624,\n            \"lon\": 106.90066826826228,\n            \"name\": \"9-р хороо Чингэлтэй дүүрэг Улаанбаатар хот\"\n        }\n    ]\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{nomad_url}}map02/api/getoptroute",
+									"host": [
+										"{{nomad_url}}map02"
+									],
+									"path": [
+										"api",
+										"getoptroute"
+									],
+									"query": [
+										{
+											"key": "ssid",
+											"value": "{{nomad_ssid}}",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Bus",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"costing\": \"auto\", // auto||pedestrian\n    \"locations\": [\n        {\n            \"lat\": 47.92973335876596,\n            \"lon\": 106.92806266658766,\n            \"name\": \"7-р хороо Сүхбаатар дүүрэг Улаанбаатар хот\"\n        },\n        {\n            \"lat\": 47.928164995272624,\n            \"lon\": 106.90066826826228,\n            \"name\": \"9-р хороо Чингэлтэй дүүрэг Улаанбаатар хот\"\n        }\n    ]\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{nomad_url}}map02/api/getplans?fromPlace=47.92141101423684,106.892581965391&toPlace=47.91168932639735,106.93772890752967",
+									"host": [
+										"{{nomad_url}}map02"
+									],
+									"path": [
+										"api",
+										"getplans"
+									],
+									"query": [
+										{
+											"key": "fromPlace",
+											"value": "47.92141101423684,106.892581965391"
+										},
+										{
+											"key": "toPlace",
+											"value": "47.91168932639735,106.93772890752967"
+										},
+										{
+											"key": "ssid",
+											"value": "{{nomad_ssid}}",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Sharks",
+			"item": [
+				{
+					"name": "User",
+					"item": [
+						{
+							"name": "Login",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"let jsonData = pm.response.json();",
+											"pm.environment.set( \"id_khamuga_access_token\", jsonData.data.token.access_token );",
+											"pm.environment.set( \"id_khamuga_id_token\", jsonData.data.token.id_token );",
+											"",
+											"pm.environment.set( \"hamuga_access_token\", jsonData.data.token.access_token ); // Sharks access token"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"code\": \"{{id_khamuga_code}}\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}user/login",
+									"host": [
+										"{{base_url}}user"
+									],
+									"path": [
+										"login"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Info",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{hamuga_access_token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}user/info",
+									"host": [
+										"{{base_url}}user"
+									],
+									"path": [
+										"info"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{hamuga_access_token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}user/delete",
+									"host": [
+										"{{base_url}}user"
+									],
+									"path": [
+										"delete"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "User History",
+					"item": [
+						{
+							"name": "searchPoaName2sOpt",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{hamuga_access_token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"page_no\": 1,\n    \"per_page\": 999,\n    \"sort\": \"created_at desc\",\n    \"filter\": [\n        {\n            \"field_name\": \"name\",\n            \"value\": \"kfc\",\n            \"operation\": \"like\"//,\n        }\n    ]\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}user/histoy/searchPoaName2sOpt",
+									"host": [
+										"{{base_url}}user"
+									],
+									"path": [
+										"histoy",
+										"searchPoaName2sOpt"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "User Address",
+					"item": [
+						{
+							"name": "General",
+							"item": [
+								{
+									"name": "Create",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{hamuga_access_token}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"name\": \"hayaag \",\n    // \"type\": \"office\",// home, office, favorite\n    \"seq\": \"144493\",\n    \"data_group\": \"poi_nomark\", // poi poi_nomark streetname region\n    \"data_type\": \"Нэршил\", // Нэршил, Зочид буудал, Үйлчилгээний байгууллага\n    // \"category_id\": \"12a144ad-01d0-4620-98a8-02017030fad1\",\n    \"latitude\": 1.2,\n    \"longitude\": 2.1,\n    \"address\": \"aadras\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{base_url}}user/addresses/create",
+											"host": [
+												"{{base_url}}user"
+											],
+											"path": [
+												"addresses",
+												"create"
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "Create - Home",
+											"originalRequest": {
+												"method": "POST",
+												"header": [],
+												"body": {
+													"mode": "raw",
+													"raw": "{\n    // \"name\": \"\",\n    \"type\": \"home\",// home, office, favorite\n    // \"category_id\": 0,\n    \"latitude\": 1.2,\n    \"longitude\": 2.1,\n    \"address\": \"aadras\"\n}",
+													"options": {
+														"raw": {
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "{{base_url}}user/addresses/create",
+													"host": [
+														"{{base_url}}user"
+													],
+													"path": [
+														"addresses",
+														"create"
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Date",
+													"value": "Fri, 01 Dec 2023 12:57:11 GMT"
+												},
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												},
+												{
+													"key": "Content-Length",
+													"value": "307"
+												},
+												{
+													"key": "Vary",
+													"value": "Origin"
+												},
+												{
+													"key": "Access-Control-Allow-Origin",
+													"value": "*"
+												}
+											],
+											"cookie": [],
+											"body": "{\n    \"response_code\": 200,\n    \"response_msg\": \"амжилттай үүсгэлээ\",\n    \"data\": {\n        \"id\": 1,\n        \"created_at\": \"2023-12-01T20:57:11.005715+08:00\",\n        \"updated_at\": null,\n        \"deleted_at\": null,\n        \"created_user_id\": 1,\n        \"updated_user_id\": null,\n        \"name\": \"\",\n        \"type\": \"home\",\n        \"latitude\": 1.2,\n        \"longitude\": 2.1,\n        \"category_id\": null,\n        \"category\": null\n    }\n}"
+										},
+										{
+											"name": "Create - Office",
+											"originalRequest": {
+												"method": "POST",
+												"header": [],
+												"body": {
+													"mode": "raw",
+													"raw": "{\n    // \"name\": \"\",\n    \"type\": \"office\",// home, office, favorite\n    // \"category_id\": 0\n    \"latitude\": 1.2,\n    \"longitude\": 2.1,\n    \"address\": \"aadras\"\n}",
+													"options": {
+														"raw": {
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "{{base_url}}user/addresses/create",
+													"host": [
+														"{{base_url}}user"
+													],
+													"path": [
+														"addresses",
+														"create"
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Date",
+													"value": "Fri, 01 Dec 2023 13:00:09 GMT"
+												},
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												},
+												{
+													"key": "Content-Length",
+													"value": "301"
+												},
+												{
+													"key": "Vary",
+													"value": "Origin"
+												},
+												{
+													"key": "Access-Control-Allow-Origin",
+													"value": "*"
+												}
+											],
+											"cookie": [],
+											"body": "{\n    \"response_code\": 200,\n    \"response_msg\": \"амжилттай үүсгэлээ\",\n    \"data\": {\n        \"id\": 2,\n        \"created_at\": \"2023-12-01T21:00:09.8411+08:00\",\n        \"updated_at\": null,\n        \"deleted_at\": null,\n        \"created_user_id\": 1,\n        \"updated_user_id\": null,\n        \"name\": \"\",\n        \"type\": \"\",\n        \"latitude\": 1.2,\n        \"longitude\": 2.1,\n        \"category_id\": null,\n        \"category\": null\n    }\n}"
+										},
+										{
+											"name": "Create - Favorite",
+											"originalRequest": {
+												"method": "POST",
+												"header": [],
+												"body": {
+													"mode": "raw",
+													"raw": "{\n    \"name\": \"durtai FAv hayag 1\",\n    \"type\": \"favorite\",// home, office, favorite\n    \"category_id\": 2,\n    \"latitude\": 1.2,\n    \"longitude\": 2.1,\n    \"address\": \"aadras\"\n}",
+													"options": {
+														"raw": {
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "{{base_url}}user/addresses/create",
+													"host": [
+														"{{base_url}}user"
+													],
+													"path": [
+														"addresses",
+														"create"
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Date",
+													"value": "Fri, 01 Dec 2023 13:08:40 GMT"
+												},
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												},
+												{
+													"key": "Content-Length",
+													"value": "316"
+												},
+												{
+													"key": "Vary",
+													"value": "Origin"
+												},
+												{
+													"key": "Access-Control-Allow-Origin",
+													"value": "*"
+												}
+											],
+											"cookie": [],
+											"body": "{\n    \"response_code\": 200,\n    \"response_msg\": \"амжилттай үүсгэлээ\",\n    \"data\": {\n        \"id\": 7,\n        \"created_at\": \"2023-12-01T21:08:41.549909+08:00\",\n        \"updated_at\": null,\n        \"deleted_at\": null,\n        \"created_user_id\": 1,\n        \"updated_user_id\": null,\n        \"name\": \"durtai hayag 2 2\",\n        \"type\": \"\",\n        \"latitude\": 1.2,\n        \"longitude\": 2.1,\n        \"category_id\": 2,\n        \"category\": null\n    }\n}"
+										},
+										{
+											"name": "Create",
+											"originalRequest": {
+												"method": "POST",
+												"header": [],
+												"body": {
+													"mode": "raw",
+													"raw": "{\n    \"name\": \"durtai hayag 2 2\",\n    // \"type\": \"office\",// home, office, favorite\n    \"category_id\": 2,\n    \"latitude\": 1.2,\n    \"longitude\": 2.1,\n    \"address\": \"aadras\"\n}",
+													"options": {
+														"raw": {
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "{{base_url}}user/addresses/create",
+													"host": [
+														"{{base_url}}user"
+													],
+													"path": [
+														"addresses",
+														"create"
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Date",
+													"value": "Fri, 01 Dec 2023 13:08:40 GMT"
+												},
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												},
+												{
+													"key": "Content-Length",
+													"value": "316"
+												},
+												{
+													"key": "Vary",
+													"value": "Origin"
+												},
+												{
+													"key": "Access-Control-Allow-Origin",
+													"value": "*"
+												}
+											],
+											"cookie": [],
+											"body": "{\n    \"response_code\": 200,\n    \"response_msg\": \"амжилттай үүсгэлээ\",\n    \"data\": {\n        \"id\": 7,\n        \"created_at\": \"2023-12-01T21:08:41.549909+08:00\",\n        \"updated_at\": null,\n        \"deleted_at\": null,\n        \"created_user_id\": 1,\n        \"updated_user_id\": null,\n        \"name\": \"durtai hayag 2 2\",\n        \"type\": \"\",\n        \"latitude\": 1.2,\n        \"longitude\": 2.1,\n        \"category_id\": 2,\n        \"category\": null\n    }\n}"
+										}
+									]
+								},
+								{
+									"name": "Update",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{hamuga_access_token}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"name\": \"durgui gazar shuuu \",\n    \"latitude\": 66.6,\n    \"longitude\": 6.66,\n    \"address\": \"aadras\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{base_url}}user/addresses/d73ff9f1-c1d1-4df5-a7e2-1515fb483441",
+											"host": [
+												"{{base_url}}user"
+											],
+											"path": [
+												"addresses",
+												"d73ff9f1-c1d1-4df5-a7e2-1515fb483441"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "List",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{id_khamuga_id_token}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"page_no\": 1,\n    \"per_page\": 999,\n    \"sort\": \"created_at desc\",\n    \"filter\": [\n        // {\n        //     \"field_name\": \"type\",\n        //     \"value\": \"favorite\",\n        //     \"operation\": \"=\"//,\n        //     // \"field_type\": \"uuid\"\n        // }\n        // {\n        //     \"field_name\": \"start_year\",\n        //     \"value\": null,\n        //     \"operation\": \"=\",\n        //     \"field_type\": \"date\"\n        // }\n    ]\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{base_url}}user/addresses",
+											"host": [
+												"{{base_url}}user"
+											],
+											"path": [
+												"addresses"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "List Grouped",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{hamuga_access_token}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"options\":{\n        // \"detail_type\": \"only_count\"\n    }\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{base_url}}user/addresses-grouped",
+											"host": [
+												"{{base_url}}user"
+											],
+											"path": [
+												"addresses-grouped"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Get",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{hamuga_access_token}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{base_url}}user/addresses/d73ff9f1-c1d1-4df5-a7e2-1515fb483441",
+											"host": [
+												"{{base_url}}user"
+											],
+											"path": [
+												"addresses",
+												"d73ff9f1-c1d1-4df5-a7e2-1515fb483441"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Delete",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{hamuga_access_token}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{base_url}}user/addresses/d73ff9f1-c1d1-4df5-a7e2-1515fb483441",
+											"host": [
+												"{{base_url}}user"
+											],
+											"path": [
+												"addresses",
+												"d73ff9f1-c1d1-4df5-a7e2-1515fb483441"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "User Address Category",
+					"item": [
+						{
+							"name": "General",
+							"item": [
+								{
+									"name": "Create",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{hamuga_access_token}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"name\": \"Үүсгэсэн нэр 10\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{base_url}}user/address-categories/create",
+											"host": [
+												"{{base_url}}user"
+											],
+											"path": [
+												"address-categories",
+												"create"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Update",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{hamuga_access_token}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"name\": \"Ямар ч нэр байж болно\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{base_url}}user/address-categories/12a144ad-01d0-4620-98a8-02017030fad1",
+											"host": [
+												"{{base_url}}user"
+											],
+											"path": [
+												"address-categories",
+												"12a144ad-01d0-4620-98a8-02017030fad1"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "List",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{hamuga_access_token}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"page_no\": 1,\n    \"per_page\": 999,\n    \"sort\": \"created_at desc\",\n    \"filter\": [\n        // {\n        //     \"field_name\": \"heritage_type_id\",\n        //     \"value\": \"c7cb3421-0758-46a0-9736-be42afc58c4c\",\n        //     \"operation\": \"=\",\n        //     \"field_type\": \"uuid\"\n        // }\n        // {\n        //     \"field_name\": \"start_year\",\n        //     \"value\": null,\n        //     \"operation\": \"=\",\n        //     \"field_type\": \"date\"\n        // }\n    ]\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{base_url}}user/address-categories",
+											"host": [
+												"{{base_url}}user"
+											],
+											"path": [
+												"address-categories"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Get",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{hamuga_access_token}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{base_url}}user/address-categories/12a144ad-01d0-4620-98a8-02017030fad1",
+											"host": [
+												"{{base_url}}user"
+											],
+											"path": [
+												"address-categories",
+												"12a144ad-01d0-4620-98a8-02017030fad1"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Delete",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{hamuga_access_token}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{base_url}}user/address-categories/44fbcd76-8ad6-4f9c-a6ff-3fa334306ed4",
+											"host": [
+												"{{base_url}}user"
+											],
+											"path": [
+												"address-categories",
+												"44fbcd76-8ad6-4f9c-a6ff-3fa334306ed4"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "POI",
+					"item": [
+						{
+							"name": "POI2",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{hamuga_access_token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}poi/poi2",
+									"host": [
+										"{{base_url}}poi"
+									],
+									"path": [
+										"poi2"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Middleware",
+					"item": [
+						{
+							"name": "Traffic",
+							"item": [
+								{
+									"name": "Traffic Cameras",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{base_url}}map/traffic-cameras",
+											"host": [
+												"{{base_url}}map"
+											],
+											"path": [
+												"traffic-cameras"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "Bus",
+							"item": [
+								{
+									"name": "GTFS",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{base_url}}map/gtfs",
+											"host": [
+												"{{base_url}}map"
+											],
+											"path": [
+												"gtfs"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "stop_list - нийт автобусны буудал авах",
+									"request": {
+										"auth": {
+											"type": "basic",
+											"basic": [
+												{
+													"key": "username",
+													"value": "{{imap_pt_username}}",
+													"type": "string"
+												},
+												{
+													"key": "password",
+													"value": "{{imap_pt_password}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{base_url}}map/bus/stop_list",
+											"host": [
+												"{{base_url}}map"
+											],
+											"path": [
+												"bus",
+												"stop_list"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "rot_stop - тухайн нэг автобусны буудалын мэдээлэл",
+									"request": {
+										"auth": {
+											"type": "basic",
+											"basic": [
+												{
+													"key": "username",
+													"value": "{{imap_pt_username}}",
+													"type": "string"
+												},
+												{
+													"key": "password",
+													"value": "{{imap_pt_password}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{base_url}}map/bus/rot_stop?BUSSTOP_ID=000000279",
+											"host": [
+												"{{base_url}}map"
+											],
+											"path": [
+												"bus",
+												"rot_stop"
+											],
+											"query": [
+												{
+													"key": "BUSSTOP_ID",
+													"value": "000000279"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "rot_stop_by_route - тухайн автобусны дэлгэрэнгүй мэдээлэл",
+									"request": {
+										"auth": {
+											"type": "basic",
+											"basic": [
+												{
+													"key": "password",
+													"value": "{{imap_pt_password}}",
+													"type": "string"
+												},
+												{
+													"key": "username",
+													"value": "{{imap_pt_username}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{base_url}}map/bus/rot_stop_by_route?BUSROUTE_ID=11100172",
+											"host": [
+												"{{base_url}}map"
+											],
+											"path": [
+												"bus",
+												"rot_stop_by_route"
+											],
+											"query": [
+												{
+													"key": "BUSROUTE_ID",
+													"value": "11100172"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "bus_route_line - тухайн автобусны дэлгэрэнгүй мэдээлэл зураас",
+									"request": {
+										"auth": {
+											"type": "basic",
+											"basic": [
+												{
+													"key": "password",
+													"value": "{{imap_pt_password}}",
+													"type": "string"
+												},
+												{
+													"key": "username",
+													"value": "{{imap_pt_username}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{base_url}}map/bus/bus_route_line?ROUTE_ID=11100010",
+											"host": [
+												"{{base_url}}map"
+											],
+											"path": [
+												"bus",
+												"bus_route_line"
+											],
+											"query": [
+												{
+													"key": "ROUTE_ID",
+													"value": "11100010"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "bus_route_list",
+									"request": {
+										"auth": {
+											"type": "basic",
+											"basic": [
+												{
+													"key": "password",
+													"value": "{{imap_pt_password}}",
+													"type": "string"
+												},
+												{
+													"key": "username",
+													"value": "{{imap_pt_username}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{base_url}}map/bus/bus_route_list?category_id=1",
+											"host": [
+												"{{base_url}}map"
+											],
+											"path": [
+												"bus",
+												"bus_route_list"
+											],
+											"query": [
+												{
+													"key": "category_id",
+													"value": "1"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "bus_direction_list",
+									"request": {
+										"auth": {
+											"type": "basic",
+											"basic": [
+												{
+													"key": "password",
+													"value": "{{imap_pt_password}}",
+													"type": "string"
+												},
+												{
+													"key": "username",
+													"value": "{{imap_pt_username}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{base_url}}map/bus/bus_direction_list?keyword=Ч:17",
+											"host": [
+												"{{base_url}}map"
+											],
+											"path": [
+												"bus",
+												"bus_direction_list"
+											],
+											"query": [
+												{
+													"key": "keyword",
+													"value": "Ч:17"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "category_list",
+									"request": {
+										"auth": {
+											"type": "basic",
+											"basic": [
+												{
+													"key": "password",
+													"value": "{{imap_pt_password}}",
+													"type": "string"
+												},
+												{
+													"key": "username",
+													"value": "{{imap_pt_username}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{base_url}}map/bus/category_list",
+											"host": [
+												"{{base_url}}map"
+											],
+											"path": [
+												"bus",
+												"category_list"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Report",
+									"request": {
+										"auth": {
+											"type": "noauth"
+										},
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"latitude\": 47.91874049031533,\n    \"longitude\": 106.91826978095881,\n    \"bus_route_id\": \"11100000\",\n    \"phone_uuid\": \"iphone-2374834-dsjkfhdskj\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{base_url}}map/bus/report",
+											"host": [
+												"{{base_url}}map"
+											],
+											"path": [
+												"bus",
+												"report"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "POST TEST",
+									"request": {
+										"auth": {
+											"type": "noauth"
+										},
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "formdata",
+											"formdata": []
+										},
+										"url": {
+											"raw": "{{base_url}}map/bus/reportaa/",
+											"host": [
+												"{{base_url}}map"
+											],
+											"path": [
+												"bus",
+												"reportaa",
+												""
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "Search POI",
+							"item": [
+								{
+									"name": "Search POI By Name",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{hamuga_access_token}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "NAME",
+													"value": "KFC ho dhod",
+													"description": "Нэр",
+													"type": "text"
+												},
+												{
+													"key": "LIMIT",
+													"value": "1577",
+													"description": "Хязгаар",
+													"type": "text"
+												},
+												{
+													"key": "CPY",
+													"value": "47.91879381643156",
+													"type": "text"
+												},
+												{
+													"key": "CPX",
+													"value": "106.9190057475007",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "{{base_url}}map/searchPoaName2sOpt",
+											"host": [
+												"{{base_url}}map"
+											],
+											"path": [
+												"searchPoaName2sOpt"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Disabled - Search POI By Category Code",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "CATEGORY_CODE",
+													"value": "3",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "{{base_url}}map/searchPoaByCategory?ssid={{nomad_ssid}}",
+											"host": [
+												"{{base_url}}map"
+											],
+											"path": [
+												"searchPoaByCategory"
+											],
+											"query": [
+												{
+													"key": "ssid",
+													"value": "{{nomad_ssid}}"
+												}
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "GTFS",
+			"item": [
+				{
+					"name": "Agencies",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://www.gtfs-data-exchange.com/api/agencies?format=json",
+							"protocol": "http",
+							"host": [
+								"www",
+								"gtfs-data-exchange",
+								"com"
+							],
+							"path": [
+								"api",
+								"agencies"
+							],
+							"query": [
+								{
+									"key": "format",
+									"value": "json",
+									"description": "json||csv"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Agency",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://www.gtfs-data-exchange.com/api/agencies?agency=abq-ride",
+							"protocol": "http",
+							"host": [
+								"www",
+								"gtfs-data-exchange",
+								"com"
+							],
+							"path": [
+								"api",
+								"agencies"
+							],
+							"query": [
+								{
+									"key": "agency",
+									"value": "abq-ride",
+									"description": "dataexchange_id"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Hamuga Gateway",
+			"item": [
+				{
+					"name": "Search POI",
+					"item": [
+						{
+							"name": "Search POI By View Box",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "X-API-KEY",
+										"value": "{{hamuga_gateway_key}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "LLX",
+											"value": "106.87995278424427",
+											"description": "Талбайн зүүн доод цэгийн уртраг ",
+											"type": "text"
+										},
+										{
+											"key": "LLY",
+											"value": "47.89344904440867",
+											"description": "Талбайн зүүн доод цэгийн өргөрөг ",
+											"type": "text"
+										},
+										{
+											"key": "URX",
+											"value": "106.95805871075754",
+											"description": "Талбайн баруун дээд цэгийн уртраг ",
+											"type": "text"
+										},
+										{
+											"key": "URY",
+											"value": "47.944126178610674",
+											"description": "Талбайн баруун доод цэгийн өргөрөг ",
+											"type": "text"
+										},
+										{
+											"key": "ZOOM",
+											"value": "13",
+											"description": "Zoom Level",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{hamuga_gateway_url}}map02/poi2/search2",
+									"host": [
+										"{{hamuga_gateway_url}}map02"
+									],
+									"path": [
+										"poi2",
+										"search2"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Search POI By Name",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "X-API-KEY",
+										"value": "{{hamuga_gateway_key}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "NAME",
+											"value": "KFC",
+											"description": "Нэр",
+											"type": "text"
+										},
+										{
+											"key": "LIMIT",
+											"value": "15",
+											"description": "Хязгаар",
+											"type": "text"
+										},
+										{
+											"key": "CPY",
+											"value": "47.91879381643156",
+											"type": "text"
+										},
+										{
+											"key": "CPX",
+											"value": "106.9190057475007",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{hamuga_gateway_url}}map02/poi2/searchPoaName2sOpt",
+									"host": [
+										"{{hamuga_gateway_url}}map02"
+									],
+									"path": [
+										"poi2",
+										"searchPoaName2sOpt"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Search POI By Category Code",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "X-API-KEY",
+										"value": "{{hamuga_gateway_key}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "CATEGORY_CODE",
+											"value": "3",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{hamuga_gateway_url}}map/v1/poi/searchPoaByCategory?ssid={{nomad_ssid}}",
+									"host": [
+										"{{hamuga_gateway_url}}map"
+									],
+									"path": [
+										"v1",
+										"poi",
+										"searchPoaByCategory"
+									],
+									"query": [
+										{
+											"key": "ssid",
+											"value": "{{nomad_ssid}}"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Search POI By ID",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "X-API-KEY",
+										"value": "{{hamuga_gateway_key}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "ID",
+											"value": "358438",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{hamuga_gateway_url}}map/v1/poi/searchPoaById?ssid={{nomad_ssid}}",
+									"host": [
+										"{{hamuga_gateway_url}}map"
+									],
+									"path": [
+										"v1",
+										"poi",
+										"searchPoaById"
+									],
+									"query": [
+										{
+											"key": "ssid",
+											"value": "{{nomad_ssid}}"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Search Suggestion",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "X-API-KEY",
+										"value": "{{hamuga_gateway_key}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "ID",
+											"value": "358438",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{hamuga_gateway_url}}search?key=kfc",
+									"host": [
+										"{{hamuga_gateway_url}}search"
+									],
+									"query": [
+										{
+											"key": "key",
+											"value": "kfc"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Seach POI By Point",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "X-API-KEY",
+										"value": "{{hamuga_gateway_key}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "X",
+											"value": "106.892581965391",
+											"description": "Long",
+											"type": "text"
+										},
+										{
+											"key": "Y",
+											"value": "47.92141101423684",
+											"description": "Lat",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{hamuga_gateway_url}}map/v1/poi/searchPoaXY?ssid={{nomad_ssid}}",
+									"host": [
+										"{{hamuga_gateway_url}}map"
+									],
+									"path": [
+										"v1",
+										"poi",
+										"searchPoaXY"
+									],
+									"query": [
+										{
+											"key": "ssid",
+											"value": "{{nomad_ssid}}"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Routing",
+					"item": [
+						{
+							"name": "Default",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "X-API-KEY",
+										"value": "{{hamuga_gateway_key}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"costing\": \"auto\", // auto||pedestrian\n    \"locations\": [\n        {\n            \"lat\": 47.92973335876596,\n            \"lon\": 106.92806266658766,\n            \"name\": \"7-р хороо Сүхбаатар дүүрэг Улаанбаатар хот\"\n        },\n        {\n            \"lat\": 47.928164995272624,\n            \"lon\": 106.90066826826228,\n            \"name\": \"9-р хороо Чингэлтэй дүүрэг Улаанбаатар хот\"\n        }\n    ]\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{hamuga_gateway_url}}map02/api/getoptroute",
+									"host": [
+										"{{hamuga_gateway_url}}map02"
+									],
+									"path": [
+										"api",
+										"getoptroute"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Bus",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "X-API-KEY",
+										"value": "{{hamuga_gateway_key}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"costing\": \"auto\", // auto||pedestrian\n    \"locations\": [\n        {\n            \"lat\": 47.92973335876596,\n            \"lon\": 106.92806266658766,\n            \"name\": \"7-р хороо Сүхбаатар дүүрэг Улаанбаатар хот\"\n        },\n        {\n            \"lat\": 47.928164995272624,\n            \"lon\": 106.90066826826228,\n            \"name\": \"9-р хороо Чингэлтэй дүүрэг Улаанбаатар хот\"\n        }\n    ]\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{hamuga_gateway_url}}map02/api/getplans?fromPlace=47.92141101423684,106.892581965391&toPlace=47.91168932639735,106.93772890752967",
+									"host": [
+										"{{hamuga_gateway_url}}map02"
+									],
+									"path": [
+										"api",
+										"getplans"
+									],
+									"query": [
+										{
+											"key": "fromPlace",
+											"value": "47.92141101423684,106.892581965391"
+										},
+										{
+											"key": "toPlace",
+											"value": "47.91168932639735,106.93772890752967"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Bus",
+					"item": [
+						{
+							"name": "stop_list - нийт автобусны буудал авах",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "username",
+											"value": "{{imap_pt_username}}",
+											"type": "string"
+										},
+										{
+											"key": "password",
+											"value": "{{imap_pt_password}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "x-api-key",
+										"value": "{{hamuga_gateway_key}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{hamuga_gateway_api_url}}map/bus/stop_list",
+									"host": [
+										"{{hamuga_gateway_api_url}}map"
+									],
+									"path": [
+										"bus",
+										"stop_list"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "rot_stop - тухайн нэг автобусны буудалын мэдээлэл",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "username",
+											"value": "{{imap_pt_username}}",
+											"type": "string"
+										},
+										{
+											"key": "password",
+											"value": "{{imap_pt_password}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "x-api-key",
+										"value": "{{hamuga_gateway_key}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{hamuga_gateway_api_url}}map/bus/rot_stop?BUSSTOP_ID=000000279",
+									"host": [
+										"{{hamuga_gateway_api_url}}map"
+									],
+									"path": [
+										"bus",
+										"rot_stop"
+									],
+									"query": [
+										{
+											"key": "BUSSTOP_ID",
+											"value": "000000279"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "rot_stop_by_route - тухайн автобусны дэлгэрэнгүй мэдээлэл",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "username",
+											"value": "{{imap_pt_username}}",
+											"type": "string"
+										},
+										{
+											"key": "password",
+											"value": "{{imap_pt_password}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "x-api-key",
+										"value": "{{hamuga_gateway_key}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{hamuga_gateway_api_url}}map/bus/rot_stop_by_route?BUSROUTE_ID=11100172",
+									"host": [
+										"{{hamuga_gateway_api_url}}map"
+									],
+									"path": [
+										"bus",
+										"rot_stop_by_route"
+									],
+									"query": [
+										{
+											"key": "BUSROUTE_ID",
+											"value": "11100172"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "bus_route_by_stop_id",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "username",
+											"value": "{{imap_pt_username}}",
+											"type": "string"
+										},
+										{
+											"key": "password",
+											"value": "{{imap_pt_password}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "x-api-key",
+										"value": "{{hamuga_gateway_key}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{hamuga_gateway_api_url}}map/bus/bus_route_by_stop_id?STOP_ID=000000269",
+									"host": [
+										"{{hamuga_gateway_api_url}}map"
+									],
+									"path": [
+										"bus",
+										"bus_route_by_stop_id"
+									],
+									"query": [
+										{
+											"key": "STOP_ID",
+											"value": "000000269"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "bus_route_line - тухайн автобусны дэлгэрэнгүй мэдээлэл зураас",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "{{imap_pt_password}}",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "{{imap_pt_username}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "x-api-key",
+										"value": "{{hamuga_gateway_key}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{hamuga_gateway_api_url}}map/bus/bus_route_line?ROUTE_ID=11100010",
+									"host": [
+										"{{hamuga_gateway_api_url}}map"
+									],
+									"path": [
+										"bus",
+										"bus_route_line"
+									],
+									"query": [
+										{
+											"key": "ROUTE_ID",
+											"value": "11100010"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "route_list",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "{{imap_pt_password}}",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "{{imap_pt_username}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "x-api-key",
+										"value": "{{hamuga_gateway_key}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{hamuga_gateway_api_url}}map/bus/bus_route_list?category_id=3",
+									"host": [
+										"{{hamuga_gateway_api_url}}map"
+									],
+									"path": [
+										"bus",
+										"bus_route_list"
+									],
+									"query": [
+										{
+											"key": "category_id",
+											"value": "3"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "category_list",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "{{imap_pt_password}}",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "{{imap_pt_username}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "x-api-key",
+										"value": "{{hamuga_gateway_key}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{hamuga_gateway_api_url}}map/bus/category_list",
+									"host": [
+										"{{hamuga_gateway_api_url}}map"
+									],
+									"path": [
+										"bus",
+										"category_list"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "bus_station_list",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "{{imap_pt_password}}",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "{{imap_pt_username}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "x-api-key",
+										"value": "{{hamuga_gateway_key}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{hamuga_gateway_api_url}}map/bus/bus_station_list?keyword=17",
+									"host": [
+										"{{hamuga_gateway_api_url}}map"
+									],
+									"path": [
+										"bus",
+										"bus_station_list"
+									],
+									"query": [
+										{
+											"key": "keyword",
+											"value": "17"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Traffic",
+					"item": [
+						{
+							"name": "Traffic Cameras",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "X-API-KEY",
+										"value": "{{hamuga_gateway_key}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{hamuga_gateway_api_url}}public/cameraJson",
+									"host": [
+										"{{hamuga_gateway_api_url}}public"
+									],
+									"path": [
+										"cameraJson"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "ID KHAMUGA",
+			"item": [
+				{
+					"name": "OIDC",
+					"item": [
+						{
+							"name": "Login-1-Get Auth Token",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"let jsonData = pm.response.json();",
+											"pm.environment.set( \"id_khamuga_access_token\", jsonData.data.token );"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"username\": \"satu2@gmail.com\",\n  \"password\": \"QXNkZjEyMzRA\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{id_khamuga_host}}api/v1/auth/login",
+									"host": [
+										"{{id_khamuga_host}}api"
+									],
+									"path": [
+										"v1",
+										"auth",
+										"login"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Login-2-Get Code",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"let jsonData = pm.response.json();",
+											"pm.environment.set( \"id_khamuga_code\", jsonData.data.code );"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{id_khamuga_access_token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{id_khamuga_host}}sso/auth?scope={{id_khamuga_scope}}&response_type={{id_khamuga_response_type}}&client_id={{id_khamuga_client_id}}&redirect_uri={{id_khamuga_redirect_uri}}&state={{id_khamuga_state}}",
+									"host": [
+										"{{id_khamuga_host}}sso"
+									],
+									"path": [
+										"auth"
+									],
+									"query": [
+										{
+											"key": "scope",
+											"value": "{{id_khamuga_scope}}"
+										},
+										{
+											"key": "response_type",
+											"value": "{{id_khamuga_response_type}}"
+										},
+										{
+											"key": "client_id",
+											"value": "{{id_khamuga_client_id}}"
+										},
+										{
+											"key": "redirect_uri",
+											"value": "{{id_khamuga_redirect_uri}}"
+										},
+										{
+											"key": "state",
+											"value": "{{id_khamuga_state}}"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Login-3-Get ID Token",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"let jsonData = pm.response.json();",
+											"pm.environment.set( \"id_khamuga_id_token\", jsonData.data.id_token );"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{id_khamuga_host}}sso/token?grant_type={{id_khamuga_grant_type}}&code={{id_khamuga_code}}&redirect_uri={{id_khamuga_redirect_uri}}&client_id={{id_khamuga_client_id}}&client_secret={{id_khamuga_client_secret}}",
+									"host": [
+										"{{id_khamuga_host}}sso"
+									],
+									"path": [
+										"token"
+									],
+									"query": [
+										{
+											"key": "grant_type",
+											"value": "{{id_khamuga_grant_type}}"
+										},
+										{
+											"key": "code",
+											"value": "{{id_khamuga_code}}"
+										},
+										{
+											"key": "redirect_uri",
+											"value": "{{id_khamuga_redirect_uri}}"
+										},
+										{
+											"key": "client_id",
+											"value": "{{id_khamuga_client_id}}"
+										},
+										{
+											"key": "client_secret",
+											"value": "{{id_khamuga_client_secret}}"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "USER",
+					"item": [
+						{
+							"name": "Хэрэглэгчийн мэдээлэлэ авах",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{id_khamuga_auth_token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{id_khamuga_host}}user",
+									"host": [
+										"{{id_khamuga_host}}user"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		}
+	]
+}

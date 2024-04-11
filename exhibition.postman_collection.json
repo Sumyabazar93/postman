@@ -1,0 +1,540 @@
+{
+	"info": {
+		"_postman_id": "586336f8-3668-4144-bf9c-1710721a2381",
+		"name": "exhibition",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27820006"
+	},
+	"item": [
+		{
+			"name": "exhibition",
+			"item": [
+				{
+					"name": "List",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"page_no\": 1,\n    \"per_page\": 5,\n    \"sort\": \"created_at desc\",\n    \"filter\": [\n\n    ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3010/exhibition/list",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3010",
+							"path": [
+								"exhibition",
+								"list"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"decision_number\":\"12345612789\",\n    \"exhibition_type_id\":\"cb7d5093-3c03-4ea6-8313-9fafedf73e1f\",\n    \"country_id\": [\"adda1f8e-c723-4eeb-813b-c01ab3cc9bcb\", \"39df534d-6191-423b-b827-a82e027d96cd\"],\n    \"exhibition_location\":\"Exhibition_Ulaanbaatar\",\n    \"exhibition_name\":\"Exhibition121\",\n    \"start_date\":\"2023-08-09T12:34:56Z\",\n    \"end_date\":\"2033-09-09T12:34:56Z\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "test.mongoluv.mn:/heritage/exhibition/create",
+							"host": [
+								"test",
+								"mongoluv",
+								"mn"
+							],
+							"port": "",
+							"path": [
+								"heritage",
+								"exhibition",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "test.mongoluv.mn:/heritage/exhibition/0b7274cc-938a-4b5c-ac47-8b748903a270",
+							"host": [
+								"test",
+								"mongoluv",
+								"mn"
+							],
+							"port": "",
+							"path": [
+								"heritage",
+								"exhibition",
+								"0b7274cc-938a-4b5c-ac47-8b748903a270"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edit",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"decision_number\":\"02345612789\",\n    \"exhibition_type_id\":\"cb7d5093-3c03-4ea6-8313-9fafedf73e1f\",\n    \"country_id\": [\"39df534d-6191-423b-b827-a82e027d96cd\"],\n    \"exhibition_location\":\"Exhibition_Darkhan\",\n    \"exhibition_name\":\"Exhibition121\",\n    \"start_date\":\"2023-08-09T12:34:56Z\",\n    \"end_date\":\"2033-09-09T12:34:56Z\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "test.mongoluv.mn:/heritage/exhibition/047778c1-c3b1-4bba-9a15-65a339b8f854/edit",
+							"host": [
+								"test",
+								"mongoluv",
+								"mn"
+							],
+							"port": "",
+							"path": [
+								"heritage",
+								"exhibition",
+								"047778c1-c3b1-4bba-9a15-65a339b8f854",
+								"edit"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "exhibition_attachments",
+			"item": [
+				{
+					"name": "List",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"page_no\": 1,\n    \"per_page\": 4,\n    \"sort\": \"created_at desc\",\n    \"filter\": [\n        {\n            \"field_name\": \"\",\n            \"value\": \"\",\n            \"operation\": \"\",\n            \"field_type\": \"\"\n        }\n    ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "test.mongoluv.mn:/heritage/exhibition/attachments/list",
+							"host": [
+								"test",
+								"mongoluv",
+								"mn"
+							],
+							"port": "",
+							"path": [
+								"heritage",
+								"exhibition",
+								"attachments",
+								"list"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"exhibition_id\":\"08429ae8-7736-4962-b2ff-de5270b2e1fa\",\n    \"attachment_id\":\"deeb99b6-17a5-4395-954c-af4181b83e77\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "test.mongoluv.mn:/heritage/exhibition/attachments/create",
+							"host": [
+								"test",
+								"mongoluv",
+								"mn"
+							],
+							"port": "",
+							"path": [
+								"heritage",
+								"exhibition",
+								"attachments",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:3010/exhibition/attachments/9c6faeab-db2b-4b81-bbc9-60387ed4312c",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3010",
+							"path": [
+								"exhibition",
+								"attachments",
+								"9c6faeab-db2b-4b81-bbc9-60387ed4312c"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edit",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"exhibition_id\":\"80ec3f60-fdba-42df-ace2-da5ea5c8fa5a\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "test.mongoluv.mn:/heritage/exhibition/attachments/f0e5f6d5-7de2-4584-adf3-23e480d3d78c/edit",
+							"host": [
+								"test",
+								"mongoluv",
+								"mn"
+							],
+							"port": "",
+							"path": [
+								"heritage",
+								"exhibition",
+								"attachments",
+								"f0e5f6d5-7de2-4584-adf3-23e480d3d78c",
+								"edit"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:3010/exhibition/attachments/8e105803-9c2a-4396-9349-7ebb71f3812f",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3010",
+							"path": [
+								"exhibition",
+								"attachments",
+								"8e105803-9c2a-4396-9349-7ebb71f3812f"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "exhibition_participants",
+			"item": [
+				{
+					"name": "List",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"page_no\": 1,\n    \"per_page\": 4,\n    \"sort\": \"created_at desc\",\n    \"filter\": [\n        {\n            \"field_name\": \"\",\n            \"value\": \"\",\n            \"operation\": \"\",\n            \"field_type\": \"\"\n        }\n    ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3010/exhibition/participants/list",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3010",
+							"path": [
+								"exhibition",
+								"participants",
+								"list"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"exhibition_id\":\"f8fd0dea-0946-46a1-8e27-42bb752fee7c\",\n    \"owner_id\":[\"a8653d3e-df3b-4e99-966b-c9c2ad5e66ab\",\"40288355-7a7d-42e9-ad97-49ff8751ccb0\"]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3010/exhibition/participants/create",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3010",
+							"path": [
+								"exhibition",
+								"participants",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:3010/exhibition/participants/f8fd0dea-0946-46a1-8e27-42bb752fee7c",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3010",
+							"path": [
+								"exhibition",
+								"participants",
+								"f8fd0dea-0946-46a1-8e27-42bb752fee7c"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edit",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"exhibition_id\":\"5afcdc5e-b0a1-4999-81c5-b4736e20cac1\",\n    \"owner_id\":\"8c9b83ff-9697-4459-9cb1-8c4d95c3e34c\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "test.mongoluv.mn:/heritage/exhibition/participants/0e0732cc-0d19-4c24-938b-721c6c2e9786/edit",
+							"host": [
+								"test",
+								"mongoluv",
+								"mn"
+							],
+							"port": "",
+							"path": [
+								"heritage",
+								"exhibition",
+								"participants",
+								"0e0732cc-0d19-4c24-938b-721c6c2e9786",
+								"edit"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

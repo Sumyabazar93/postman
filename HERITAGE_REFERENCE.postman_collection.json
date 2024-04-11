@@ -1,0 +1,3552 @@
+{
+	"info": {
+		"_postman_id": "3e2b7672-8daf-4e19-b9ca-2fcdc04053f6",
+		"name": "HERITAGE_REFERENCE",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27820006"
+	},
+	"item": [
+		{
+			"name": "4.ҮЛ ХӨДЛӨХ ДУРСГАЛТ ГАЗАР,  ДУРСГАЛЫН ГЭМТЛИЙН ТӨРӨЛ",
+			"item": [
+				{
+					"name": "Create",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"custom3\":\"88\", // Эрэмбэ\n    \"name\":\"Хагарал, цууралтай эсэх\", // Гэмтлийн нэр\n    \"parent_type\":\"74733803-4bd0-4553-a049-80399bdaf570\" // Төрөл зүйлийн нэр\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3010/heritage/immovable/reference/damage/type/create",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3010",
+							"path": [
+								"heritage",
+								"immovable",
+								"reference",
+								"damage",
+								"type",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:3010/heritage/immovable/reference/damage/type/0fa30838-52cd-41e2-9418-b01c82603db1/delete",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3010",
+							"path": [
+								"heritage",
+								"immovable",
+								"reference",
+								"damage",
+								"type",
+								"0fa30838-52cd-41e2-9418-b01c82603db1",
+								"delete"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:3010/heritage/immovable/reference/damage/type/6c18e8d6-9e33-4a9e-89c4-c825c246d314/get",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3010",
+							"path": [
+								"heritage",
+								"immovable",
+								"reference",
+								"damage",
+								"type",
+								"6c18e8d6-9e33-4a9e-89c4-c825c246d314",
+								"get"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edit",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"custom3\":\"88\", // Эрэмбэ\n    \"name\":\"Хагарал, цууралтай эсэх\", // Гэмтлийн нэр\n    \"parent_type\":\"74733803-4bd0-4553-a049-80399bdaf570\" // Төрөл зүйлийн нэр\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3010/heritage/immovable/reference/damage/type/3bcf2935-b208-4441-af64-6af8d120d8c0/edit",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3010",
+							"path": [
+								"heritage",
+								"immovable",
+								"reference",
+								"damage",
+								"type",
+								"3bcf2935-b208-4441-af64-6af8d120d8c0",
+								"edit"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "List NoParentId",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"page_no\": 1,\n    \"per_page\": 5,\n    \"sort\": \"custom3 asc\",\n    \"filter\": [\n        {\n            \"field_name\": \"\",\n            \"value\": \"\",\n            \"operation\": \"\",\n            \"field_type\": \"\"\n        }\n    ],\n    \"default_param\": [\n        {\n            \"key\": \"ref_code\",\n            \"value\": \"IMMOVABLE_HERITAGE_DAMAGE_TYPE\"\n        }\n    ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3010/heritage/immovable/reference/damage/type/list/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3010",
+							"path": [
+								"heritage",
+								"immovable",
+								"reference",
+								"damage",
+								"type",
+								"list",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "List all",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"page_no\": 1,\n    \"per_page\": 5,\n    \"sort\": \"number asc\",\n    \"filter\": [\n        {\n            \"field_name\": \"\",\n            \"value\": \"\",\n            \"operation\": \"\",\n            \"field_type\": \"\"\n        }\n    ],\n    \"default_param\": [\n        {\n            \"key\": \"ref_code\",\n            \"value\": \"IMMOVABLE_HERITAGE_DAMAGE_TYPE\"\n        }\n    ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3010/heritage/immovable/reference/damage/type/list",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3010",
+							"path": [
+								"heritage",
+								"immovable",
+								"reference",
+								"damage",
+								"type",
+								"list"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Боловсрол",
+			"item": [
+				{
+					"name": "list Copy 5",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"page_no\": 1,\n    \"per_page\": 5,\n    \"sort\": \"custom3 asc\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3010/education/reference/list",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3010",
+							"path": [
+								"education",
+								"reference",
+								"list"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Copy 5",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\":\"Программ хангамж\",\n    \"custom3\":\"1\" // Erembe\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3010/education/reference/create",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3010",
+							"path": [
+								"education",
+								"reference",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE Copy 5",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:3010/education/reference/d52204ec-7c46-4115-bacd-378f08f8582b/delete",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3010",
+							"path": [
+								"education",
+								"reference",
+								"d52204ec-7c46-4115-bacd-378f08f8582b",
+								"delete"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:3010/education/reference/d52204ec-7c46-4115-bacd-378f08f8582b/get",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3010",
+							"path": [
+								"education",
+								"reference",
+								"d52204ec-7c46-4115-bacd-378f08f8582b",
+								"get"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edit Copy 5",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\":\"Программ хангамж\",\n    \"custom3\":\"1\" // Erembe\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3010/education/reference/d52204ec-7c46-4115-bacd-378f08f8582b/edit",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3010",
+							"path": [
+								"education",
+								"reference",
+								"d52204ec-7c46-4115-bacd-378f08f8582b",
+								"edit"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Соёлын биет бус өвийн ай сав",
+			"item": [
+				{
+					"name": "list Copy 2",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"page_no\": 1,\n    \"per_page\": 5,\n    \"sort\": \"custom2 asc\" // Эрэмбээр эрэмблэх\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3010/aisav/reference/list",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3010",
+							"path": [
+								"aisav",
+								"reference",
+								"list"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "list Parent Copy 3",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"page_no\": 1,\n    \"per_page\": 5\n\n    // list/:id [1, 2, 3] \n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3010/aisav/reference/list/2",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3010",
+							"path": [
+								"aisav",
+								"reference",
+								"list",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edit Copy 2",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\":\"Дөрвөд аман аялгуу\", // child\n    \"parent_type\":\"faf81ea1-cd02-429e-b705-fe8890d23abb\", // Soyliin biyt bus uviing jagsaalt\n    \"custom1\":\"7f1caa1e-2e65-4740-a323-2bd49f8e6398\", // aisav \n    \"custom2\":\"1\" // Батлагдсан он заавал бөглөнө // erembe\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3010/aisav/reference/011768d6-2fbb-4a37-a1bb-4c5beffa1589/edit",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3010",
+							"path": [
+								"aisav",
+								"reference",
+								"011768d6-2fbb-4a37-a1bb-4c5beffa1589",
+								"edit"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Copy 2",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\":\"Дөрвөд аман аялгуу\", // child\n    \"parent_type\":\"faf81ea1-cd02-429e-b705-fe8890d23abb\", // Soyliin biyt bus uviing jagsaalt\n    \"custom1\":\"7f1caa1e-2e65-4740-a323-2bd49f8e6398\", // aisav \n    \"custom2\":\"1\" // Батлагдсан он заавал бөглөнө // erembe\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3010/aisav/reference/create",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3010",
+							"path": [
+								"aisav",
+								"reference",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE Copy 2",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:3010/aisav/reference/011768d6-2fbb-4a37-a1bb-4c5beffa1589/delete",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3010",
+							"path": [
+								"aisav",
+								"reference",
+								"011768d6-2fbb-4a37-a1bb-4c5beffa1589",
+								"delete"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:3010/aisav/reference/f1a850f0-30db-427a-a812-3c7a9c2190f7/get",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3010",
+							"path": [
+								"aisav",
+								"reference",
+								"f1a850f0-30db-427a-a812-3c7a9c2190f7",
+								"get"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "19ЗАСАГ ЗАХИРГААНЫ НЭГЖ",
+			"item": [
+				{
+					"name": "list Copy 4",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"page_no\": 1,\n    \"per_page\": 5\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3010/heritage/region/reference/list",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3010",
+							"path": [
+								"heritage",
+								"region",
+								"reference",
+								"list"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Copy 4",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"region_name\":\"Баянгол\",\n    \"section_id\":\"e10002f8-2386-4965-aa29-b407413a418f\", // 1r horoo\n    \"province_id\":\"0b10075c-d7c4-46e2-9c55-42263ed0fa6e\", // Baynhongor\n    \"section_code\":6542\n}\n\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3010/heritage/region/reference/create",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3010",
+							"path": [
+								"heritage",
+								"region",
+								"reference",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE Copy 4",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:3010/heritage/region/reference/87921ceb-9197-47b0-a4e5-beb9a3c10a0b/edit",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3010",
+							"path": [
+								"heritage",
+								"region",
+								"reference",
+								"87921ceb-9197-47b0-a4e5-beb9a3c10a0b",
+								"edit"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:3010/heritage/region/reference/87921ceb-9197-47b0-a4e5-beb9a3c10a0b/get",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3010",
+							"path": [
+								"heritage",
+								"region",
+								"reference",
+								"87921ceb-9197-47b0-a4e5-beb9a3c10a0b",
+								"get"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edit Copy 4",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"region_name\":\"Баянгол\",\n    \"section_id\":\"e10002f8-2386-4965-aa29-b407413a418f\", // 1r horoo\n    \"province_id\":\"0b10075c-d7c4-46e2-9c55-42263ed0fa6e\", // Baynhongor\n    \"section_code\":6542\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3010/heritage/region/reference/87921ceb-9197-47b0-a4e5-beb9a3c10a0b/edit",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3010",
+							"path": [
+								"heritage",
+								"region",
+								"reference",
+								"87921ceb-9197-47b0-a4e5-beb9a3c10a0b",
+								"edit"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Соёлын биет бус өвийн тогтоол, шийдвэр",
+			"item": [
+				{
+					"name": "list Copy 2",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"page_no\": 1,\n    \"per_page\": 5\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3010/intangible/heritage/reference/decision/list",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3010",
+							"path": [
+								"intangible",
+								"heritage",
+								"reference",
+								"decision",
+								"list"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edit Copy 2",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\":\"Засгийн газрын 207 дугаар тогтоол\", // Тогтоол шийдвэрийн нэр заавал бөглөнө\n    \"refCode2\":\"fb155e89-63c8-4a54-aeeb-82b91193bd11\", // СББӨ д хамаарах тогтоол шийдвэр 8fbfe759-df69-4282-98b5-8576dbecdd7f, dd8c84ad-2bbc-43af-b492-d9cbec802b14, fb155e89-63c8-4a54-aeeb-82b91193bd11\n    \"custom3\":\"2022\" // Батлагдсан он заавал бөглөнө\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3010/intangible/heritage/reference/decision/935a4902-928b-4d4d-8d0d-bcd71fd59e4b/edit",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3010",
+							"path": [
+								"intangible",
+								"heritage",
+								"reference",
+								"decision",
+								"935a4902-928b-4d4d-8d0d-bcd71fd59e4b",
+								"edit"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Copy 2",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\":\"Засгийн газрын 207 дугаар тогтоол\", // Тогтоол шийдвэрийн нэр заавал бөглөнө\n    \"refCode2\":\"СББӨ д хамаарах тогтоол шийдвэр\", // СББӨ д хамаарах тогтоол шийдвэр 8fbfe759-df69-4282-98b5-8576dbecdd7f, dd8c84ad-2bbc-43af-b492-d9cbec802b14, fb155e89-63c8-4a54-aeeb-82b91193bd11\n    // select * from v1_refs vr where custom1  = 'INTANGIBLE_HERITAGE_REF_DECISION_STATIC';\n    \"custom3\":\"2022\" // Батлагдсан он заавал бөглөнө\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3010/intangible/heritage/reference/decision/create",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3010",
+							"path": [
+								"intangible",
+								"heritage",
+								"reference",
+								"decision",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE Copy 2",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:3010/intangible/heritage/reference/decision/935a4902-928b-4d4d-8d0d-bcd71fd59e4b/delete",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3010",
+							"path": [
+								"intangible",
+								"heritage",
+								"reference",
+								"decision",
+								"935a4902-928b-4d4d-8d0d-bcd71fd59e4b",
+								"delete"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:3010/intangible/heritage/reference/decision/47646eb1-cd6e-4757-8376-3ae808b7549c/get",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3010",
+							"path": [
+								"intangible",
+								"heritage",
+								"reference",
+								"decision",
+								"47646eb1-cd6e-4757-8376-3ae808b7549c",
+								"get"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "ХӨДЛӨХ ДУРСГАЛТ ЗҮЙЛИЙН ТОГТООЛ ШИЙДВЭР",
+			"item": [
+				{
+					"name": "list Copy",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"page_no\": 1,\n    \"per_page\": 5\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3010/heritage/movable/reference/priority/decision/list",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3010",
+							"path": [
+								"heritage",
+								"movable",
+								"reference",
+								"priority",
+								"decision",
+								"list"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edit Copy",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"custom1\":\"2022\", // Батлагдсан он заавал бөглөнө\n    \"name\":\"Засгийн газрын 207 дугаар тогтоол\", // Тогтоол шийдвэрийн нэр заавал бөглөнө\n    \"parent_type\":\"88d3f83e-e2c7-4da2-9a14-71c895e66f68\" // Хөдлөх өвд хамаарах тогтоол шийдвэр заавал бөглөнө Зэрэглэл тогтоосон тогтоол шийдвэр; d59d3a10-4365-4738-932b-0b95e20a6db5, Шилжүүлсэн тогтоол шийдвэр 88d3f83e-e2c7-4da2-9a14-71c895e66f68\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3010/heritage/movable/reference/priority/decision/3e79b19e-07c0-4a44-b7db-d2a8101a8e74/edit",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3010",
+							"path": [
+								"heritage",
+								"movable",
+								"reference",
+								"priority",
+								"decision",
+								"3e79b19e-07c0-4a44-b7db-d2a8101a8e74",
+								"edit"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Copy",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"custom1\":\"2022\", // Батлагдсан он заавал бөглөнө\n    \"name\":\"Засгийн газрын 207 дугаар тогтоол\", // Тогтоол шийдвэрийн нэр заавал бөглөнө\n    \"parent_type\":\"88d3f83e-e2c7-4da2-9a14-71c895e66f68\" // Хөдлөх өвд хамаарах тогтоол шийдвэр заавал бөглөнө Зэрэглэл тогтоосон тогтоол шийдвэр; d59d3a10-4365-4738-932b-0b95e20a6db5, Шилжүүлсэн тогтоол шийдвэр 88d3f83e-e2c7-4da2-9a14-71c895e66f68\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3010/heritage/movable/reference/priority/decision/create",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3010",
+							"path": [
+								"heritage",
+								"movable",
+								"reference",
+								"priority",
+								"decision",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE Copy",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:3010/heritage/movable/reference/priority/decision/3b0c2295-dc1d-465a-a152-e1e59c52919a/delete",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3010",
+							"path": [
+								"heritage",
+								"movable",
+								"reference",
+								"priority",
+								"decision",
+								"3b0c2295-dc1d-465a-a152-e1e59c52919a",
+								"delete"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:3010/heritage/movable/reference/priority/decision/d59d3a10-4365-4738-932b-0b95e20a6db5/get",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3010",
+							"path": [
+								"heritage",
+								"movable",
+								"reference",
+								"priority",
+								"decision",
+								"d59d3a10-4365-4738-932b-0b95e20a6db5",
+								"get"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Хөдлөх дурсгалт зүйлийн төрөл зүйл",
+			"item": [
+				{
+					"name": "list Copy",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"page_no\": 1,\n    \"per_page\": 5,\n    \"sort\": \"custom3 asc\" // Эрэмбээр эрэмблэх\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3010/heritage/immovable/reference/priority/decision/list",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3010",
+							"path": [
+								"heritage",
+								"immovable",
+								"reference",
+								"priority",
+								"decision",
+								"list"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edit Copy",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"custom1\":\"2022\", // Батлагдсан он заавал бөглөнө\n    \"name\":\"Засгийн газрын 207 дугаар тогтоол\", // Тогтоол шийдвэрийн нэр заавал бөглөнө\n    \"parent_type\":\"88d3f83e-e2c7-4da2-9a14-71c895e66f68\" // Хөдлөх өвд хамаарах тогтоол шийдвэр заавал бөглөнө Зэрэглэл тогтоосон тогтоол шийдвэр; d59d3a10-4365-4738-932b-0b95e20a6db5, Шилжүүлсэн тогтоол шийдвэр 88d3f83e-e2c7-4da2-9a14-71c895e66f68\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3010/heritage/movable/reference/priority/decision/3e79b19e-07c0-4a44-b7db-d2a8101a8e74/edit",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3010",
+							"path": [
+								"heritage",
+								"movable",
+								"reference",
+								"priority",
+								"decision",
+								"3e79b19e-07c0-4a44-b7db-d2a8101a8e74",
+								"edit"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Copy",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"custom3\":\"2\",\n    \"name\":\"child type\", // Тогтоол шийдвэрийн нэр заавал бөглөнө\n    \"ai: '1.5'\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3010/heritage/movable/reference/priority/decision/create",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3010",
+							"path": [
+								"heritage",
+								"movable",
+								"reference",
+								"priority",
+								"decision",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE Copy",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:3010/heritage/movable/reference/priority/decision/3b0c2295-dc1d-465a-a152-e1e59c52919a/delete",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3010",
+							"path": [
+								"heritage",
+								"movable",
+								"reference",
+								"priority",
+								"decision",
+								"3b0c2295-dc1d-465a-a152-e1e59c52919a",
+								"delete"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:3010/heritage/movable/reference/priority/decision/3b0c2295-dc1d-465a-a152-e1e59c52919a/get",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3010",
+							"path": [
+								"heritage",
+								"movable",
+								"reference",
+								"priority",
+								"decision",
+								"3b0c2295-dc1d-465a-a152-e1e59c52919a",
+								"get"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "ХӨДЛӨХ ДУРСГАЛТ ЗҮЙЛИЙН ХОЛБОГДОХ ОН ЦАГ",
+			"item": [
+				{
+					"name": "list",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"page_no\": 1,\n    \"per_page\": 10,\n    \"sort\": \"custom3 asc\" // Эрэмбээр эрэмблэх\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3010/heritage/movable/reference/century/list",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3010",
+							"path": [
+								"heritage",
+								"movable",
+								"reference",
+								"century",
+								"list"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"custom3\":\"8\", // Эрэмбэ\n    \"name\":\"1.2 зууны тест\", // Төрөл зүйлын Нэр\n    \"parent_type\":\"586752a7-9a47-49cf-9c25-2c791bc7a355\" // Төрөл зүйлын Нэр Parent_ID\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3010/heritage/movable/reference/century/create",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3010",
+							"path": [
+								"heritage",
+								"movable",
+								"reference",
+								"century",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edit",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"custom3\":\"2\",\n    \"name\":\"TEST1\",\n    \"parent_type\":\"586752a7-9a47-49cf-9c25-2c791bc7a355\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3010/heritage/movable/reference/century/64f229e0-29bb-4e08-8e92-14cdd5140baf/edit",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3010",
+							"path": [
+								"heritage",
+								"movable",
+								"reference",
+								"century",
+								"64f229e0-29bb-4e08-8e92-14cdd5140baf",
+								"edit"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:3010/heritage/movable/reference/century/e1c08d65-9738-4126-a05d-5721e1ab9fd3/delete",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3010",
+							"path": [
+								"heritage",
+								"movable",
+								"reference",
+								"century",
+								"e1c08d65-9738-4126-a05d-5721e1ab9fd3",
+								"delete"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:3010/heritage/movable/reference/century/e1c08d65-9738-4126-a05d-5721e1ab9fd3/get",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3010",
+							"path": [
+								"heritage",
+								"movable",
+								"reference",
+								"century",
+								"e1c08d65-9738-4126-a05d-5721e1ab9fd3",
+								"get"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Өвийн төрөл",
+			"item": [
+				{
+					"name": "list",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"page_no\": 1,\n    \"per_page\": 10,\n    \"sort\": \"custom3 asc\",\n    \"filter\": [\n        {\n            \"field_name\": \"\",\n            \"value\": \"\",\n            \"operation\": \"\",\n            \"field_type\": \"\"\n        }\n    ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3010/heritage/type/reference/list",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3010",
+							"path": [
+								"heritage",
+								"type",
+								"reference",
+								"list"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Баримтат өв\", // Өвийн төрөл\n    \"custom3\": \"4\" // Эрэмбэ\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3010/heritage/type/reference/create",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3010",
+							"path": [
+								"heritage",
+								"type",
+								"reference",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edit",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Үл хөдлөх дурсгал\", // Өвийн төрөл\n    \"custom3\": \"1\" // Эрэмбэ\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3010/heritage/type/reference/d62582ca-99f6-43d7-b142-ba1860401b6f/edit",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3010",
+							"path": [
+								"heritage",
+								"type",
+								"reference",
+								"d62582ca-99f6-43d7-b142-ba1860401b6f",
+								"edit"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:3010/heritage/type/reference/26f39872-19a6-4780-996d-833e152bdabb/delete",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3010",
+							"path": [
+								"heritage",
+								"type",
+								"reference",
+								"26f39872-19a6-4780-996d-833e152bdabb",
+								"delete"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:3010/heritage/type/reference/26f39872-19a6-4780-996d-833e152bdabb/get",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3010",
+							"path": [
+								"heritage",
+								"type",
+								"reference",
+								"26f39872-19a6-4780-996d-833e152bdabb",
+								"get"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Үндэс, Угсаа",
+			"item": [
+				{
+					"name": "list Copy 5",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"page_no\": 1,\n    \"per_page\": 5,\n    \"sort\": \"custom3 asc\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3010/nationality/reference/list",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3010",
+							"path": [
+								"nationality",
+								"reference",
+								"list"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Copy 5",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\":\"Халх\",\n    \"custom1\":\"1\", // Tuluv 0, 1\n    \"custom3\":\"2\" // Erembe\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3010/nationality/reference/create",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3010",
+							"path": [
+								"nationality",
+								"reference",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edit Copy 5",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\":\"Халх\",\n    \"custom1\":\"1\", // Tuluv 0, 1\n    \"custom3\":\"3\" // Erembe\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3010/nationality/reference/6f550bad-6471-44af-bfba-c3e76297e580/edit",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3010",
+							"path": [
+								"nationality",
+								"reference",
+								"6f550bad-6471-44af-bfba-c3e76297e580",
+								"edit"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE Copy 5",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:3010/nationality/reference/6f550bad-6471-44af-bfba-c3e76297e580/delete",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3010",
+							"path": [
+								"nationality",
+								"reference",
+								"6f550bad-6471-44af-bfba-c3e76297e580",
+								"delete"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:3010/nationality/reference/6f550bad-6471-44af-bfba-c3e76297e580/get",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3010",
+							"path": [
+								"nationality",
+								"reference",
+								"6f550bad-6471-44af-bfba-c3e76297e580",
+								"get"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Бүртгэл, мэдээллийн санд хадгалагдаж буй баримтын төрөл",
+			"item": [
+				{
+					"name": "List",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"page_no\": 1,\n    \"per_page\": 5,\n    \"sort\": \"number desc\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3010/heritage/registration/documents/type/reference/list",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3010",
+							"path": [
+								"heritage",
+								"registration",
+								"documents",
+								"type",
+								"reference",
+								"list"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"custom3\":\"2\", // Erembe\n    \"name\":\"VHS VIDEO\", // Barimtiin turliin ner\n    \"parent_type\":\"15b906d7-1451-4561-bacf-9798fa6a20c3\" // Parent type\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3010/heritage/registration/documents/type/reference/create",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3010",
+							"path": [
+								"heritage",
+								"registration",
+								"documents",
+								"type",
+								"reference",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "edit",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"ref_code\":\"REGISTRATION_TYPES_DOCUMENTS_STORED\",\n    \"custom3\":\"1\",\n    \"name\":\"VHS Video\",\n    \"parent_type\":\"586752a7-9a47-49cf-9c25-2c791bc7a355\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3010/heritage/registration/documents/type/reference/15b906d7-1451-4561-bacf-9798fa6a20c3/edit",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3010",
+							"path": [
+								"heritage",
+								"registration",
+								"documents",
+								"type",
+								"reference",
+								"15b906d7-1451-4561-bacf-9798fa6a20c3",
+								"edit"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:3010/heritage/registration/documents/type/reference/424a0a64-e097-474c-bcbf-a2b230832c65/delete",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3010",
+							"path": [
+								"heritage",
+								"registration",
+								"documents",
+								"type",
+								"reference",
+								"424a0a64-e097-474c-bcbf-a2b230832c65",
+								"delete"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:3010/heritage/registration/documents/type/reference/424a0a64-e097-474c-bcbf-a2b230832c65/get",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3010",
+							"path": [
+								"heritage",
+								"registration",
+								"documents",
+								"type",
+								"reference",
+								"424a0a64-e097-474c-bcbf-a2b230832c65",
+								"get"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "13.БАРИМТАТ ӨВИЙН ТӨРӨЛ ЗҮЙЛ",
+			"item": [
+				{
+					"name": "Delete",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:3010/heritage/documentary/reference/species/55831b1d-78e0-478d-b362-af4380eac0e5/delete",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3010",
+							"path": [
+								"heritage",
+								"documentary",
+								"reference",
+								"species",
+								"55831b1d-78e0-478d-b362-af4380eac0e5",
+								"delete"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edit",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"custom3\":\"3\", // Erembe\n    \"name\":\"Гар бичмэл\" // Turul zuil ner\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3010/heritage/documentary/reference/species/5fe4023f-5e89-457b-9ec9-972c7904bda7/edit",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3010",
+							"path": [
+								"heritage",
+								"documentary",
+								"reference",
+								"species",
+								"5fe4023f-5e89-457b-9ec9-972c7904bda7",
+								"edit"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:3010/heritage/documentary/reference/species/5fe4023f-5e89-457b-9ec9-972c7904bda7/get",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3010",
+							"path": [
+								"heritage",
+								"documentary",
+								"reference",
+								"species",
+								"5fe4023f-5e89-457b-9ec9-972c7904bda7",
+								"get"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "List",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"page_no\": 1,\n    \"per_page\": 5,\n    \"sort\": \"custom3 asc\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3010/heritage/documentary/reference/species/list",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3010",
+							"path": [
+								"heritage",
+								"documentary",
+								"reference",
+								"species",
+								"list"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"custom3\":\"3\", // Erembe\n    \"name\":\"Гар бичмэл\" // Turul zuil ner\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3010/heritage/documentary/reference/species/create",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3010",
+							"path": [
+								"heritage",
+								"documentary",
+								"reference",
+								"species",
+								"create"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "10.ҮЛ ХӨДЛӨХ ДУРСГАЛТ ГАЗАР,  ДУРСГАЛЫН ХОЛБОГДОХ ОН ЦАГ",
+			"item": [
+				{
+					"name": "list",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"page_no\": 1,\n    \"per_page\": 5,\n    \"sort\": \"number asc\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3010/heritage/immovable/reference/century/list",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3010",
+							"path": [
+								"heritage",
+								"immovable",
+								"reference",
+								"century",
+								"list"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"custom3\":\"88\", // Эрэмбэ\n    \"name\":\"21 зууны хожуу үе\", // Төрөл зүйлийн нэр\n    \"parent_type\":\"fde32a47-4d3e-40c6-b52c-da6f7b9ee46d\" // Төрөл зүйлийн нэр\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3010/heritage/immovable/reference/century/create",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3010",
+							"path": [
+								"heritage",
+								"immovable",
+								"reference",
+								"century",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edit",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"custom3\":\"2\", // Эрэмбэ\n    \"name\":\"21 зууны хожуу үе\", // Төрөл зүйлийн нэр\n    \"parent_type\":\"fde32a47-4d3e-40c6-b52c-da6f7b9ee46d\" // Төрөл зүйлийн нэр\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3010/heritage/immovable/reference/century/4824ce95-a342-4f35-a409-419ce1e60ef4/edit",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3010",
+							"path": [
+								"heritage",
+								"immovable",
+								"reference",
+								"century",
+								"4824ce95-a342-4f35-a409-419ce1e60ef4",
+								"edit"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:3010/heritage/immovable/reference/century/4824ce95-a342-4f35-a409-419ce1e60ef4/delete",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3010",
+							"path": [
+								"heritage",
+								"immovable",
+								"reference",
+								"century",
+								"4824ce95-a342-4f35-a409-419ce1e60ef4",
+								"delete"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:3010/heritage/immovable/reference/century/8a7b4796-2cc3-4435-89cc-49c80a69f952/get",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3010",
+							"path": [
+								"heritage",
+								"immovable",
+								"reference",
+								"century",
+								"8a7b4796-2cc3-4435-89cc-49c80a69f952",
+								"get"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "1.ҮЛ ХӨДЛӨХ ДУРСГАЛТ ГАЗАР,  ДУРСГАЛЫН ТӨРӨЛ ЗҮЙЛ",
+			"item": [
+				{
+					"name": "List",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"page_no\": 1,\n    \"per_page\": 5,\n    \"sort\": \"custom3 asc\" // Эрэмбээр эрэмблэх\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "test.mongoluv.mn:/heritage/heritage/immovable/reference/species/list",
+							"host": [
+								"test",
+								"mongoluv",
+								"mn"
+							],
+							"port": "",
+							"path": [
+								"heritage",
+								"heritage",
+								"immovable",
+								"reference",
+								"species",
+								"list"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"custom3\":\"8\", // Эрэмбэ\n    \"name\":\"зууны тест\", // Төрөл зүйлын Нэр\n    \"parent_type\":\"08544ef0-b96f-4a3c-b4d1-29b61f0068da\" // Төрөл зүйлын Нэр Parent_ID\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3010/heritage/immovable/reference/species/create",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3010",
+							"path": [
+								"heritage",
+								"immovable",
+								"reference",
+								"species",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edit",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"custom3\":\"21\", // Эрэмбэ\n    \"name\":\"зууны тест\", // Төрөл зүйлын Нэр\n    \"parent_type\":\"6b2275d5-04f0-4295-9973-0cc864ef1531\" // Төрөл зүйлын Нэр Parent_ID\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3010/heritage/immovable/reference/species/08544ef0-b96f-4a3c-b4d1-29b61f0068da/edit",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3010",
+							"path": [
+								"heritage",
+								"immovable",
+								"reference",
+								"species",
+								"08544ef0-b96f-4a3c-b4d1-29b61f0068da",
+								"edit"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:3010/heritage/immovable/reference/species/b8d0184a-2d34-44cc-a937-198de43a43f5/delete",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3010",
+							"path": [
+								"heritage",
+								"immovable",
+								"reference",
+								"species",
+								"b8d0184a-2d34-44cc-a937-198de43a43f5",
+								"delete"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:3010/heritage/immovable/reference/species/08544ef0-b96f-4a3c-b4d1-29b61f0068da/get",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3010",
+							"path": [
+								"heritage",
+								"immovable",
+								"reference",
+								"species",
+								"08544ef0-b96f-4a3c-b4d1-29b61f0068da",
+								"get"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Материалын төрөл",
+			"item": [
+				{
+					"name": "list",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"page_no\": 1,\n    \"per_page\": 5,\n    \"sort\": \"custom3 asc\" // Эрэмбээр эрэмблэх\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3010/heritage/Material/reference/list",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3010",
+							"path": [
+								"heritage",
+								"Material",
+								"reference",
+								"list"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Өвс\",\n    \"custom3\":\"1\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3010/heritage/Material/reference/create",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3010",
+							"path": [
+								"heritage",
+								"Material",
+								"reference",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "edit",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Өв\",\n    \"custom3\":\"11\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3010/heritage/Material/reference/e3742d6e-178a-4a14-b722-aba55b2d7017/edit",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3010",
+							"path": [
+								"heritage",
+								"Material",
+								"reference",
+								"e3742d6e-178a-4a14-b722-aba55b2d7017",
+								"edit"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Өвс\",\n    \"custom3\":\"1\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3010/heritage/Material/reference/e3742d6e-178a-4a14-b722-aba55b2d7017/delete",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3010",
+							"path": [
+								"heritage",
+								"Material",
+								"reference",
+								"e3742d6e-178a-4a14-b722-aba55b2d7017",
+								"delete"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Өвс\",\n    \"custom3\":\"1\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3010/heritage/Material/reference/3999ca9e-e485-4726-a6d9-43f5d98f7f19/get",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3010",
+							"path": [
+								"heritage",
+								"Material",
+								"reference",
+								"3999ca9e-e485-4726-a6d9-43f5d98f7f19",
+								"get"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Шошгоны төрөл",
+			"item": [
+				{
+					"name": "List",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"page_no\": 1,\n    \"per_page\": 5,\n    \"sort\": \"custom3 asc\" // Эрэмбээр эрэмблэх\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3010/heritage/label/reference/list",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3010",
+							"path": [
+								"heritage",
+								"label",
+								"reference",
+								"list"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Хөдлөх өв\",\n    \"custom1\": \"Barimtjuulaltiin gerel zurga\",\n    \"custom2\": \"Баримтжуулалтын\",\n    \"custom3\": \"Ерөнхий байдал\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3010/heritage/label/reference/create",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3010",
+							"path": [
+								"heritage",
+								"label",
+								"reference",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edit",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Хөдлөх өв\",\n    \"custom1\": \"Barimtjuulaltiin gerel zurga\",\n    \"custom2\": \"Баримтжуулалтын\",\n    \"custom3\": \"Ерөнхий байдал\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3010/heritage/label/reference/13fb4b84-6048-4f27-a689-170950093cef/edit",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3010",
+							"path": [
+								"heritage",
+								"label",
+								"reference",
+								"13fb4b84-6048-4f27-a689-170950093cef",
+								"edit"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Хөдлөх өв\",\n    \"custom1\": \"Barimtjuulaltiin gerel zurga\",\n    \"custom2\": \"Баримтжуулалтын\",\n    \"custom3\": \"Ерөнхий байдал\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3010/heritage/label/reference/13fb4b84-6048-4f27-a689-170950093cef/delete",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3010",
+							"path": [
+								"heritage",
+								"label",
+								"reference",
+								"13fb4b84-6048-4f27-a689-170950093cef",
+								"delete"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Хөдлөх өв\",\n    \"custom1\": \"Barimtjuulaltiin gerel zurga\",\n    \"custom2\": \"Баримтжуулалтын\",\n    \"custom3\": \"Ерөнхий байдал\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3010/heritage/label/reference/f0c8a649-00a3-4192-8929-81ec7a5f6bc3/get",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3010",
+							"path": [
+								"heritage",
+								"label",
+								"reference",
+								"f0c8a649-00a3-4192-8929-81ec7a5f6bc3",
+								"get"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

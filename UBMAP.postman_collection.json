@@ -1,0 +1,452 @@
+{
+	"info": {
+		"_postman_id": "42998c0b-ae6b-4892-af37-75c8075a6a8a",
+		"name": "UBMAP",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27820006"
+	},
+	"item": [
+		{
+			"name": "bus_route_list",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "imap@2023",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "superuser",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://ubmap.ulaanbaatar.mn/api/bus_route_list",
+					"protocol": "https",
+					"host": [
+						"ubmap",
+						"ulaanbaatar",
+						"mn"
+					],
+					"path": [
+						"api",
+						"bus_route_list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "route_list",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "imap@2023",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "superuser",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://ubmap.ulaanbaatar.mn/api/bus_route_list",
+					"protocol": "https",
+					"host": [
+						"ubmap",
+						"ulaanbaatar",
+						"mn"
+					],
+					"path": [
+						"api",
+						"bus_route_list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "bus_route_line",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "imap@2023",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "superuser",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://ubmap.ulaanbaatar.mn/api/bus_route_line?ROUTE_ID=11100010",
+					"protocol": "https",
+					"host": [
+						"ubmap",
+						"ulaanbaatar",
+						"mn"
+					],
+					"path": [
+						"api",
+						"bus_route_line"
+					],
+					"query": [
+						{
+							"key": "ROUTE_ID",
+							"value": "11100010"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "bus_stop_list",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "imap@2023",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "superuser",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://ubmap.ulaanbaatar.mn/api/stop_list",
+					"protocol": "https",
+					"host": [
+						"ubmap",
+						"ulaanbaatar",
+						"mn"
+					],
+					"path": [
+						"api",
+						"stop_list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "rot_stop",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "imap@2023",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "superuser",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://ubmap.ulaanbaatar.mn/api/rot_stop?BUSSTOP_ID=000000351",
+					"protocol": "https",
+					"host": [
+						"ubmap",
+						"ulaanbaatar",
+						"mn"
+					],
+					"path": [
+						"api",
+						"rot_stop"
+					],
+					"query": [
+						{
+							"key": "BUSSTOP_ID",
+							"value": "000000351"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "bus_station_list",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "imap@2023",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "superuser",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://ubmap.ulaanbaatar.mn/api/bus_station_list",
+					"protocol": "https",
+					"host": [
+						"ubmap",
+						"ulaanbaatar",
+						"mn"
+					],
+					"path": [
+						"api",
+						"bus_station_list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "bus_direction_list",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "imap@2023",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "superuser",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://ubmap.ulaanbaatar.mn/api/bus_direction_list?keyword=Ч:17",
+					"protocol": "https",
+					"host": [
+						"ubmap",
+						"ulaanbaatar",
+						"mn"
+					],
+					"path": [
+						"api",
+						"bus_direction_list"
+					],
+					"query": [
+						{
+							"key": "keyword",
+							"value": "Ч:17"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "rot_stop_by_route",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "imap@2023",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "superuser",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://ubmap.ulaanbaatar.mn/api/rot_stop_by_route?BUSROUTE_ID=11100172",
+					"protocol": "https",
+					"host": [
+						"ubmap",
+						"ulaanbaatar",
+						"mn"
+					],
+					"path": [
+						"api",
+						"rot_stop_by_route"
+					],
+					"query": [
+						{
+							"key": "BUSROUTE_ID",
+							"value": "11100172"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "route_pt",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://cloudgis.mn/map02/api/getplans?fromPlace=47.92105887610723,106.88744544982912&toPlace=47.91887307876936,106.94709777832031",
+					"protocol": "https",
+					"host": [
+						"cloudgis",
+						"mn"
+					],
+					"path": [
+						"map02",
+						"api",
+						"getplans"
+					],
+					"query": [
+						{
+							"key": "fromPlace",
+							"value": "47.92105887610723,106.88744544982912"
+						},
+						{
+							"key": "toPlace",
+							"value": "47.91887307876936,106.94709777832031"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "bus_route_by_id",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "imap@2023",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "superuser",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://ubmap.ulaanbaatar.mn/api/bus_route_by_id?ROUTE_ID=11100430",
+					"protocol": "https",
+					"host": [
+						"ubmap",
+						"ulaanbaatar",
+						"mn"
+					],
+					"path": [
+						"api",
+						"bus_route_by_id"
+					],
+					"query": [
+						{
+							"key": "ROUTE_ID",
+							"value": "11100430"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "air quality middleware",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://ubmap.ulaanbaatar.mn/api/agaarmn",
+					"protocol": "https",
+					"host": [
+						"ubmap",
+						"ulaanbaatar",
+						"mn"
+					],
+					"path": [
+						"api",
+						"agaarmn"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Bus_list",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "ICT@2023",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "user_dev",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://ubmap.ulaanbaatar.mn/api/bus_list",
+					"protocol": "https",
+					"host": [
+						"ubmap",
+						"ulaanbaatar",
+						"mn"
+					],
+					"path": [
+						"api",
+						"bus_list"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
